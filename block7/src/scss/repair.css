@@ -1,0 +1,93 @@
+/*    SWIPER REPAIR \ REPAIR   */
+@import './style.scss';
+
+.repair {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 35px 0 35px;
+
+}
+
+
+.repair__title {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #7E7E82;
+}
+
+.repair__container {
+	position: relative;
+}
+
+.swiper-container {}
+
+.repair__list {
+	display: flex;
+	flex-direction: row;
+
+}
+
+@media (max-width:767.98px) {
+	.repair__list {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+}
+
+.swiper-wrapper {}
+
+.repair__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+	max-width: 240px;
+	min-height: 160px;
+	padding: 1rem;
+	margin: 2rem 0 0 0;
+
+}
+
+.repair__item:not(:last-child) {
+
+	margin-right: 2rem;
+}
+
+.swiper-slide {}
+
+.repair__text {}
+
+.repair__button-item {
+	align-self: flex-end;
+}
+
+.btn-swiper {}
+
+.repair__buttons-container {
+	margin: 2rem 0 1rem 0;
+	display: flex;
+	position: relative;
+}
+
+@media (max-width: 767.98px) {
+	.repair__buttons-container {
+		display: none;
+	}
+}
+
+.repair__buttons-container::before {
+	content: url(/images/strelochki.svg);
+	display: block;
+	position: absolute;
+}
+
+.repair__btn--more {
+	display: block;
+	margin: 0 0 0 2rem;
+}
+
+.repair__btn--less {
+	display: none;
+	margin: 0 0 0 2rem;
+}

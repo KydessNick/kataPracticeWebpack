@@ -1,0 +1,99 @@
+
+/*================= HEADER  ===================*/
+@import './style.scss';
+
+.header {
+	display: flex;
+	height: 0px;
+	padding: 0px 10px 0 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width:1119.97px) {
+	.header {
+		height: 88px;
+		padding: 0px 25px 0 25px;
+	}
+}
+
+.header__burger-button {
+	margin-right: 20px;
+	background-color: inherit;
+}
+
+.icon__burger {
+	display: block;
+}
+
+@media (min-width:1118.97px) {
+	.icon__burger {
+		display: none;
+	}
+
+}
+
+/*===================LOGO===================*/
+.header_logo-container {
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	flex: 1 0 97px;
+}
+
+@media (max-width:766.99px) {
+	.icon--768px {
+		display: none;
+	}
+}
+
+.header__icon-trubka {}
+
+.header__icon-chat {}
+
+.header__icon-profile {}
+
+.header__icon-repair {}
+
+.header_check-staus-icon {}
+
+.icon {
+	width: 40px;
+	height: 40px;
+}
+
+.header__icon:not(:last-child) {
+	margin-right: 20px;
+}
+
+/*===============divide lines=================*/
+@media (min-width:766.99px) {
+	.didve-line--first {
+		display: block;
+		height: 32px;
+		border: 1px solid #EAEAEA;
+		margin: 0 20px 0 0;
+	}
+}
+
+@media (min-width:1118.99px) {
+	.didve-line--first {
+		display: none;
+		height: 32px;
+		border: 1px solid #EAEAEA;
+		margin: 0 20px 0 0;
+	}
+}
+
+@media (max-width:1118.99px) {
+	.didve-line--second {
+		display: block;
+		height: 32px;
+		border: 1px solid #EAEAEA;
+		margin: 0 20px 0 0px;
+	}
+}
+
+

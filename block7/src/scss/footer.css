@@ -1,0 +1,32 @@
+/*  PAGEs FOOTER  */
+@import './style.scss';
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	
+	padding:1rem;
+	margin: 0 0 ;
+}
+.footer__left-side {
+	flex: 1 1 33%;
+	justify-self: flex-start;
+}
+.footer__year {
+}
+.footer__authors {
+}
+.footer__center-side {
+	flex: 1 1 33%;
+	justify-self: center;
+}
+.footer__privacy-policy {
+}
+.footer__right-side {
+	flex: 1 1 33%;
+	justify-self: flex-end;
+	text-align: end;
+}
+.footer__notification {
+}
+

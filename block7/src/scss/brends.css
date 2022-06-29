@@ -1,0 +1,182 @@
+/*=========== brends ============*/
+@import './style.scss';
+
+.brends {
+	background-color: #F8F8F8;
+	padding: 15px 25px 15px 25px;
+}
+
+.brends-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.brends__title {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #7E7E82;
+	font-size: 24px;
+	margin: 24px 0 0 0;
+}
+
+
+.brends__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	gap: 1rem;
+	justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+	.brends__list {
+		display: none;
+	}
+}
+
+.brends__item {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	padding: 1rem;
+	min-width: 240px;
+	height: 72px;
+	border-radius: 5px;
+
+}
+
+@media (min-width: 767.98px) {
+	.brends__item {
+		display: none;
+		/*display: flex ;*/
+	}
+}
+
+
+
+/*========      SWIPER   BRENDS  ===============*/
+.brends__list--swiper {
+	display: none;
+}
+
+@media (max-width: 767.97px) {
+	.brends__list--swiper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 100px;
+		align-items: center;
+		align-content: center;
+		margin-top: 2rem;
+	}
+
+	.brends__list--swiper-wripper {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 100px;
+		align-items: center;
+		align-content: center;
+		margin-top: 2rem;
+	}
+
+	.brends__item--swiper {
+		display: flex;
+		justify-content: space-between;
+		background-color: #ffffff;
+		padding: 1rem;
+		min-width: 240px;
+		max-width: 240px;
+		height: 72px;
+		border-radius: 5px;
+
+
+	}
+
+	.brends__icon--swiper {
+		align-self: center;
+	}
+}
+
+.swiper-wraper {
+	margin: 0 0 1rem 0;
+
+}
+
+.swiper-pagination {
+	bottom: -16px !important;
+
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	line-height: 20px;
+	font-size: 14px;
+	background: #dddddd;
+}
+
+.brends__list--swiper .swiper-slide {
+	width: auto;
+}
+
+/*================================================*/
+
+
+.brends__icon {
+	align-self: center;
+}
+
+.brends__button-item {
+	background-image: url(/practice1.5/images/go-btn.svg);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.btn-swiper {
+	background-image: url(/practice1.5/images/go-btn.svg);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.brends__buttons-container {
+	margin: 2rem 0 1rem 0;
+	display: flex;
+	position: relative;
+}
+
+@media (max-width: 767.98px) {
+	.brends__buttons-container {
+		display: none;
+	}
+}
+
+.brends__buttons-container::before {
+	content: url(/images/strelochki.svg);
+	display: block;
+	position: absolute;
+}
+
+
+
+.brends__button--more {
+	display: block;
+	margin: 0 0 0 2rem;
+}
+
+.brends__button--less {
+	display: none;
+	margin: 0 0 0 2rem;
+}

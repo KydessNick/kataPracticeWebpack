@@ -1,0 +1,139 @@
+/*================tittle services================*/
+@import './style.scss';
+
+.services {}
+
+.services__tittle-container {
+	display: flex;
+	padding: 0 0 0 15px;
+	align-items: baseline;
+}
+
+@media (min-width:766.99px) {
+	.services__tittle-container {
+		padding: 0 0 0 25px;
+	}
+}
+
+@media (min-width:1118.97px) {
+	.services__tittle-container {
+		padding: 0 35px 0 35px;
+	}
+}
+
+.services__tittle {
+	flex: 1 0 auto;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: -0.6px;
+	line-height: 40px;
+	margin: 24px 0;
+}
+
+@media (min-width:1119.97px) {
+	.services__tittle-container__tittle {
+		margin-top: 50px;
+	}
+}
+
+h1::before {
+	content: "";
+	position: absolute;
+	height: 45px;
+	width: 25px;
+	background: #41F6D7;
+	border: 1px solid #000000;
+	border-radius: 25%;
+	left: -21px;
+}
+
+.services__icons-text--1120px {
+	display: none;
+}
+
+@media (min-width:1119.97px) {
+	.services__icons-text--1120px {
+		display: flex;
+		align-items: center;
+	}
+
+	.services__icons-text--1120px:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.services__text {
+	margin: 0 1rem 0 0;
+}
+
+.icon-repair {}
+
+.header__icon-check-staus {}
+
+/*=========================list services===============================*/
+.services__container {
+	padding: 0 0 0 15px;
+}
+
+@media (min-width:766.99px) {
+	.services__container {
+		padding: 0 0 0 25px;
+	}
+}
+
+@media (min-width:1119.97px) {
+	.services__container {
+		padding: 0 35px 0 35px;
+	}
+}
+
+.services__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+@media (min-width:1119.97px) {
+	.services__list {
+		flex-wrap: wrap;
+	}
+}
+
+.services__item {
+	padding: 0.5em;
+	justify-content: center;
+	text-align: center;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	max-width: 248px;
+	height: 40px;
+}
+
+@media (min-width:1119.97px) {
+	.services__item {
+		padding: 0.7em 1.2em 0.7em 1.2em;
+		margin-bottom: 1rem;
+	}
+}
+
+.services__item.active {
+	background-color: #ffffff;
+	border: 1px solid #B8FFEC;
+	border-radius: 5%;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width:1119.97px) {
+	.services__item:last-child {
+		margin-top: 0;
+	}
+}
+
+.services__text {
+	white-space: pre;
+	font-size: 16px;
+}

@@ -1,0 +1,159 @@
+/*====================mobile menu========================*/
+@import './style.scss';
+
+.mobile-menu {
+	position: absolute;
+	display: none;
+	/*display:flex;*/
+	flex-direction: column;
+	left: 0;
+	top: 0;
+	background-color: #F8F8F8;
+	padding: 1rem 1.5rem 2rem 1.5rem;
+	opacity: 1;
+	width: 320px;
+	height: 100vh;
+	z-index: 10;
+	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+	font-family: 'TT Lakes';
+	font-size: 16;
+
+}
+
+@media (min-width:1439.98px) {
+	.mobile-menu {
+		display: flex;
+		position: fixed;
+		min-width: 305px;
+		height: 100vh;
+	}
+}
+
+.mobile-menu__header {
+	display: flex;
+	align-items: center;
+}
+
+.mobile-menu__left-section-header {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+.mobile-menu__close-button {}
+
+@media (min-width: 1439.98px) {
+	.mobile-menu__close-button {
+		display: none;
+	}
+}
+
+.close-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FF3E79;
+	position: relative;
+	margin-right: 1rem;
+}
+
+.close-button svg {
+	background: url(/images/close.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: absolute;
+	top: 28%;
+	left: 28%;
+
+}
+
+.close-button__text {
+	display: none;
+}
+
+.mobile-menu__logo {}
+
+/*=======mobile menu list====================*/
+.mobile-menu__list {
+	flex: 1 1 auto;
+	margin: 3rem 0 0 0;
+	color: #000000;
+}
+
+.mobile-menu__item:not(:last-child) {
+	margin: 0 0 2rem 0;
+}
+
+.mobile-menu__link {
+	color: black;
+}
+
+.mobile-menu__link--active {
+	position: relative;
+	color: #7E7E82;
+}
+
+.mobile-menu__link--active::before {
+	content: "";
+	position: absolute;
+	height: 32px;
+	width: 25px;
+	background: #41F6D7;
+	border: 1px solid #000000;
+	border-radius: 25%;
+	left: -46px;
+	top: -8px;
+}
+
+/*=============mobile menu footer ====================*/
+.mobile-menu__footer-mobile {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 auto;
+}
+
+.footer-mobile {}
+
+.footer-mobile__icons-container {
+	display: flex;
+}
+
+.footer-mobile__icons-container img {
+	margin-bottom: 1rem;
+
+}
+
+.footer-mobile__icons-container img:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.footer-mobile__mail {
+	font-size: 18px;
+	color: #1B1C21;
+	letter-spacing: -0.2px;
+}
+
+.footer-mobile__tel {
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	text-align: left;
+	margin: 1rem 0 3rem 0;
+}
+
+.footer-mobile__languages {
+	display: flex;
+}
+
+.footer-mobile__languages a {
+	font-size: 18px;
+	color: #1B1C21;
+}
+
+.footer-mobile__languages .footer-mobile__ru--active {
+	color: #7E7E82;
+}
+
+.footer-mobile__languages a:not(:last-child) {
+	margin-right: 0.4rem;
+}
