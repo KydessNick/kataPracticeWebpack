@@ -9,20 +9,40 @@
 @import './repair.css';
 @import './services.css';
 
-$bgColor: #24292e;
-$text: #fff;
+$bgColor: #fff;
+$text: #1B1C21;
+$sub-titile: #7E7E82;
 
+/*
 @font-face {
   font-family: 'Comic';
   src: url('../fonts/comic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
+*/
+/* Regular */
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/TTLakes-Regular.ttf) format("ttf");
+	src: url(../fonts/TTLakes-Regular.woff) format("woff");
+}
+/* Bold */
+@font-face {
+	font-family: 'TTLakes';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../fonts/TTLakes-Bold.ttf) format("ttf");
+	src: url(../fonts/TTLakes-Bold.woff) format("woff");
+}
+
 
 body {
-  padding: 1rem;
+  padding: 0rem;
   margin: 0;
-  font-family: Comic, sans-serif;
+  font-family: sans-serif, TTLakes;
   background-color: $bgColor;
   color: $text;
 }

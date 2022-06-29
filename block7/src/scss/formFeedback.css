@@ -42,7 +42,7 @@ input,
 .feedback-form__submit {}
 
 .feedback-form__submit::after {
-	background-image: url(/practice1\,6/images16/dropdown.svg);
+	background-image: url(../img/dropdown.svg);
 }
 
 /* order-call form */

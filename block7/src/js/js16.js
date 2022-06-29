@@ -1,29 +1,29 @@
 
-let btnMenu                 =   document.querySelector('.header__burger-button');
-let mobileMenu              =   document.querySelector('.mobile-menu');
-let mobileMenuCloseButton   =   document.querySelector('.mobile-menu__close-button');
+export let btnMenu                 =   document.querySelector('.header__burger-button');
+export let mobileMenu              =   document.querySelector('.mobile-menu');
+export let mobileMenuCloseButton   =   document.querySelector('.mobile-menu__close-button');
 //  blur
-let blur                    =   document.querySelector('.blur');
+export let blur                    =   document.querySelector('.blur');
 //  icons
-let trubka                  =   document.querySelector('.icon-trubka');
-let chat                    =   document.querySelector('.icon-chat');
-let profile                 =   document.querySelector('.icon-profile');
+export let trubka                  =   document.querySelector('.icon-trubka');
+export let chat                    =   document.querySelector('.icon-chat');
+export let profile                 =   document.querySelector('.icon-profile');
 //  forms
 // !feedback form
-let feedbackFform           =   document.querySelector('.feedback-form');
-let feedbackFormCloseBtn    =   document.querySelector('.feedback-form__close-btn');
+export let feedbackFform           =   document.querySelector('.feedback-form');
+export let feedbackFormCloseBtn    =   document.querySelector('.feedback-form__close-btn');
 // !oreder call form
-let orderCallFormCloseBtn    =   document.querySelector('.order-call__close-btn');
-let orderCallForm            =   document.querySelector('.order-call');
+export let orderCallFormCloseBtn    =   document.querySelector('.order-call__close-btn');
+export let orderCallForm            =   document.querySelector('.order-call');
 // brends list
-const windowWidth = document.documentElement.clientWidth;
-let brendParent = document.querySelector('.brends__list');
-let brendChildren = brendParent.querySelectorAll('.brends__item');
-let btnShowMoreBrends = document.querySelector('.brends__button--more');
-let btnShowLessBrends = document.querySelector('.brends__button--less');
+export const windowWidth = document.documentElement.clientWidth;
+export let brendParent = document.querySelector('.brends__list');
+export let brendChildren = brendParent.querySelectorAll('.brends__item');
+export let btnShowMoreBrends = document.querySelector('.brends__button--more');
+export let btnShowLessBrends = document.querySelector('.brends__button--less');
 // repair list
-let btnShowMoreRepair = document.querySelector('.repair__btn--more');
-let btnShowLessRepair = document.querySelector('.repair__btn--less');
+export let btnShowMoreRepair = document.querySelector('.repair__btn--more');
+export let btnShowLessRepair = document.querySelector('.repair__btn--less');
 
 
 btnMenu.addEventListener('click', function(){

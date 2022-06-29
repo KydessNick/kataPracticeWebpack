@@ -100,7 +100,7 @@
     }
     
     .prices__btn-get-offer::after {
-        content:url('../images16/Line.svg');
+        content:url('../img/Line.svg');
         right: -0.9rem;
         bottom: 0;
         position: absolute;
