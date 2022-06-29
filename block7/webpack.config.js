@@ -11,7 +11,8 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js'
+    filename: './js/bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
 
   // Source maps для удобства отладки
@@ -84,8 +85,8 @@ module.exports = {
     // Копируем картинки
     new CopyWebpackPlugin(
       [
-        { from: "src", to: "dist" },
-       // { from: "other", to: "public" },
+       // { from: "src", to: "dist" },
+        { from: "src/img", to: "img" },
 
       ],
     )

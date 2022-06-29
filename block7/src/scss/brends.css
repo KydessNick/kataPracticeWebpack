@@ -131,7 +131,7 @@
 }
 
 .brends__button-item {
-	background-image: url(/practice1.5/images/go-btn.svg);
+	background-image: url('../img/go-btn.svg');
 	background-repeat: no-repeat;
 	background-color: #ffffff;
 	width: 40px;
@@ -141,7 +141,7 @@
 }
 
 .btn-swiper {
-	background-image: url(/practice1.5/images/go-btn.svg);
+	background-image: url('../img/go-btn.svg');
 	background-repeat: no-repeat;
 	background-color: #ffffff;
 	width: 40px;
@@ -164,7 +164,7 @@
 }
 
 .brends__buttons-container::before {
-	content: url(/images/strelochki.svg);
+	content: url('../img/strelochki.svg');
 	display: block;
 	position: absolute;
 }
