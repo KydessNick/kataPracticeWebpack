@@ -1,28 +1,49 @@
  
 export var swiper= Swiper;
 export var init = false;
+let mobile = window.matchMedia('(min-width: 0px) and (max-width: 768px)');
+let tablet = window.matchMedia('(min-width: 769px) and (max-width: 1074px)');
+let desktop = window.matchMedia('(min-width: 1075px)');
 
+const repairSwiper = new Swiper('.repair__container', {
+    enabled: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints:{
+        911:{
+            enabled: false
+        }
+    },
+    slidesPerView: 'auto' ,
+    spaceBetween: 35,
+    watchOverFlow: true,
+})
 
-
-/* Which media query
-**************************************************************/
-export function swiperMode() {
-    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 768px)');
-    
-    let tablet = window.matchMedia('(min-width: 769px) and (max-width: 1074px)');
-    
-    let desktop = window.matchMedia('(min-width: 1075px)');
-
-    // Enable (for mobile)
-    if(mobile.matches || tablet.matches ) {
-        if (!init) {
-            init = true;
-            swiper = new Swiper('.services__container', {
+const pricesSwiper = new Swiper('.prices__list-swiper', {
+    enabled: true,
+    breakpoints:{
+        767:{
+            enabled: false
+        }
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 35,
+    watchOverFlow: true,
+})
+    const servisecSwiper = new Swiper('.services__container', {
                 slidesPerView:'auto',
                 spaceBetween: 35,
                 watchOverFlow: true,
             })
-            new Swiper('.brends__list--swiper', {
+            const brendsSwipee = new Swiper('.brends__list--swiper', {
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
@@ -33,59 +54,6 @@ export function swiperMode() {
                 watchOverFlow: true,
             })
 
-    } 
-    // Disable (for desktop)
-    else if(desktop.matches) {
-        swiper.destroy();
-        init = false;
-    }
-    //repair swiper
-}else if(mobile.matches ) {
-    if (!init) {
-        init = true;
-        new Swiper('.repair__container', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-            slidesPerView: 'auto' ,
-            spaceBetween: 35,
-            watchOverFlow: true,
-        })
-        new Swiper('.prices__list--swiper', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-            slidesPerView: 'auto' ,
-            spaceBetween: 35,
-            watchOverFlow: true,
-        })
-        
-    }// Disable (for desktop)
-    else if(desktop.matches) {
-        swiper.destroy();
-        init = false;
-    }// Disable (for desktop)
-    else if(tablet.matches) {
-        swiper.destroy();
-        init = false;
-    }
-}
-}
-/* On Load
-**************************************************************/
-window.addEventListener('load', function() {
-    swiperMode();
-});
-
-/* On Resize
-**************************************************************/
-window.addEventListener('resize', function() {
-    swiperMode();
-});
 
 
 

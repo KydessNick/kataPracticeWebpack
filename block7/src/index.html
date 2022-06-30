@@ -55,10 +55,10 @@
             </div>
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link mobile-menu__link--active">Ремонт техники</a>
+                    <a href="#" class="mobile-menu__link ">Ремонт техники</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Услги и сервисы</a>
+                    <a href="#" class="mobile-menu__link mobile-menu__link--active">Услги и сервисы</a>
                 </li>
                 <li class="mobile-menu__item">
                     <a href="#" class="mobile-menu__link">Корпоративным клиентам</a>
@@ -81,13 +81,13 @@
             </ul>
             <div class="mobile-menu__footer-mobile footer-mobile">
                 <div class="footer-mobile__icons-container">
-                    <button type="button" class="icon--768px header__icon icon-trubka">
+                    <button type="button" class="  icon-trubka--mobile">
                         <img src="img/call-icon.svg" alt="Call icon" class=" icon-trubka icon">
                     </button>
-                    <button type="button" class="icon--768px header__icon">
+                    <button type="button" class=" icon-chat--mobile">
                         <img src="img/chat-icon.svg" alt="Chat icon" class=" icon-chat icon">
                     </button>
-                    <button type="button" class="icon--768px header__icon">
+                    <button type="button" class=" icon-profile--mobile">
                         <img src="img/profile-icon.svg" alt="profile icon" class=" icon-profile  icon">
                     </button>
                 </div>
@@ -299,7 +299,7 @@
                 </div>
 
                 <!-- Brends  -->
-                <section class="brends__list">
+                <div class="brends__list">
                     <div class="brends__item">
                         <img src="img/lenovo.png" alt="icon lenovo" class="brends__icon">
                         <button class="brends__button-item"></button>
@@ -348,7 +348,7 @@
                         <img src="img/apple.png" alt="icon apple" class="brends__icon">
                         <button class="brends__button-item"></button>
                     </div>
-                </section>
+                </div>
                 <div class="brends__buttons-container">
 
                     <button type="button" class="brends__button--more">Показать еще</button>
@@ -460,103 +460,124 @@
                 </div>
                 <!-- prices swiper -->
             </section>
-            <section class="prices--swiper">
-                <p class="prices__title--swiper">Цены на услуги</p>
-                <div class="prices__list--swiper swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="pices__item--swiper">
-                                <h3 class="prices__name--swiper">Ремонтные услуги</h3>
-                                <p class="prices__name--swiper">Диагностика</p>
-                                <div class="prices__info--swiper">
-                                    <div class="prices__info-left--swiper">
-                                        <p class="prices__price--swiper">Цена</p>
-                                        <p class="prices__price--swiper">Бесплатно</p>
-                                        <p class="prices__working-time--swiper">Срок</p>
-                                        <p class="prices__working-time--swiper">30 мин</p>
+            <section class="price-swiper">
+                <h2 class="prices__title-swiper">Цены на услуги</h2>
+                <div class="prices__list-swiper swiper-container">
+                    <div class="swiper-wrapper">                 
+                            <div class="pices__item-swiper swiper-slide">
+                                <div class="pices_item-top">                                
+                                    <p class="prices__name-swiper">Ремонтные услуги</p>
+                                    <p class="prices__name-swiper--text">Диагностика</p>
+                                </div>
+                                <div class="prices__info-swiper">
+                                    <div class="prices__info-left-swiper">
+                                        <div class="prices__info-left-swiper-first">                            
+                                            <p class="prices__price-swiper">Цена</p>
+                                            <p class="prices__price-swiper--text">Бесплатно</p>
+                                        </div>
+                                        <div class="prices__info-left-swiper-second">
+                                            <p class="prices__working-time-swiper">Срок</p>
+                                            <p class="prices__working-time-swiper--text">30 мин</p>
+                                        </div>
                                     </div>
-                                    <div class="prices__info-right--swiper">
-                                        <button type="button" class="perices__btn-order--swiper">Заказать</button>
+                                    <div class="prices__info-right-swiper">
+                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
 
-                        <div class="swiper-slide">
-                            <div class="pices__item--swiper">
-                                <h3 class="prices__name--swiper">Ремонтные услуги</h3>
-                                <p class="prices__name--swiper">Замена дисплея</p>
-                                <div class="prices__info--swiper">
-                                    <div class="prices__info-left--swiper">
-                                        <p class="prices__price--swiper">Цена</p>
-                                        <p class="prices__price--swiper">1 000 ₽</p>
-                                        <p class="prices__working-time--swiper">Срок</p>
-                                        <p class="prices__working-time--swiper">30-120 мин</p>
+                            <div class="pices__item-swiper swiper-slide">
+                                <div class="pices_item-top">                                
+                                    <p class="prices__name-swiper">Ремонтные услуги</p>
+                                    <p class="prices__name-swiper--text">Замена дисплея</p>
+                                </div>
+                                <div class="prices__info-swiper">
+                                    <div class="prices__info-left-swiper">
+                                        <div class="prices__info-left-swiper-first">                            
+                                            <p class="prices__price-swiper">Цена</p>
+                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                        </div>
+                                        <div class="prices__info-left-swiper-second">
+                                            <p class="prices__working-time-swiper">Срок</p>
+                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        </div>
                                     </div>
-                                    <div class="prices__info-right--swiper">
-                                        <button type="button" class="perices__btn-order--swiper">Заказать</button>
+                                    <div class="prices__info-right-swiper">
+                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="pices__item-swiper swiper-slide">
+                                <div class="pices_item-top">                                
+                                    <p class="prices__name-swiper">Ремонтные услуги</p>
+                                    <p class="prices__name-swiper--text">Замена полифонического динамика</p>
+                                </div>
+                                <div class="prices__info-swiper">
+                                    <div class="prices__info-left-swiper">
+                                        <div class="prices__info-left-swiper-first">                            
+                                            <p class="prices__price-swiper">Цена</p>
+                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                        </div>
+                                        <div class="prices__info-left-swiper-second">
+                                            <p class="prices__working-time-swiper">Срок</p>
+                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        </div>
+                                    </div>
+                                    <div class="prices__info-right-swiper">
+                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="pices__item-swiper swiper-slide">
+                                <div class="pices_item-top">                                
+                                    <p class="prices__name-swiper">Ремонтные услуги</p>
+                                    <p class="prices__name-swiper--text">Тестирование с выдачей технического заключения</p>
+                                </div>
+                                <div class="prices__info-swiper">
+                                    <div class="prices__info-left-swiper">
+                                        <div class="prices__info-left-swiper-first">                            
+                                            <p class="prices__price-swiper">Цена</p>
+                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                        </div>
+                                        <div class="prices__info-left-swiper-second">
+                                            <p class="prices__working-time-swiper">Срок</p>
+                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        </div>
+                                    </div>
+                                    <div class="prices__info-right-swiper">
+                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="pices__item-swiper swiper-slide">
+                                <div class="pices_item-top">                                
+                                    <p class="prices__name-swiper">Ремонтные услуги</p>
+                                    <p class="prices__name-swiper--text">Замена программного обеспечения</p>
+                                </div>
+                                <div class="prices__info-swiper">
+                                    <div class="prices__info-left-swiper">
+                                        <div class="prices__info-left-swiper-first">                            
+                                            <p class="prices__price-swiper">Цена</p>
+                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                        </div>
+                                        <div class="prices__info-left-swiper-second">
+                                            <p class="prices__working-time-swiper">Срок</p>
+                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        </div>
+                                    </div>
+                                    <div class="prices__info-right-swiper">
+                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
                                     </div>
                                 </div>
 
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="pices__item--swiper">
-                                <h3 class="prices__name--swiper">Ремонтные услуги</h3>
-                                <p class="prices__name--swiper">Замена полифонического динамика</p>
-                                <div class="prices__info--swiper">
-                                    <div class="prices__info-left--swiper">
-                                        <p class="prices__price--swiper">Цена</p>
-                                        <p class="prices__price--swiper">1 000 ₽</p>
-                                        <p class="prices__working-time--swiper">Срок</p>
-                                        <p class="prices__working-time--swiper">30-120 мин</p>
-                                    </div>
-                                    <div class="prices__info-right--swiper">
-                                        <button type="button" class="perices__btn-order--swiper">Заказать</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="pices__item--swiper">
-                                <h3 class="prices__name--swiper">Ремонтные услуги</h3>
-                                <p class="prices__name--swiper">Тестирование с выдачей технического заключения</p>
-                                <div class="prices__info--swiper">
-                                    <div class="prices__info-left--swiper">
-                                        <p class="prices__price--swiper">Цена</p>
-                                        <p class="prices__price--swiper">1 000 ₽</p>
-                                        <p class="prices__working-time--swiper">Срок</p>
-                                        <p class="prices__working-time--swiper">30-120 мин</p>
-                                    </div>
-                                    <div class="prices__info-right--swiper">
-                                        <button type="button" class="perices__btn-order--swiper">Заказать</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="pices__item--swiper">
-                                <h3 class="prices__name--swiper">Ремонтные услуги</h3>
-                                <p class="prices__name--swiper">Замена программного обеспечения</p>
-                                <div class="prices__info--swiper">
-                                    <div class="prices__info-left--swiper">
-                                        <p class="prices__price--swiper">Цена</p>
-                                        <p class="prices__price--swiper">1 000 ₽</p>
-                                        <p class="prices__working-time--swiper">Срок</p>
-                                        <p class="prices__working-time--swiper">30-120 мин</p>
-                                    </div>
-                                    <div class="prices__info-right--swiper">
-                                        <button type="button" class="perices__btn-order--swiper">Заказать</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

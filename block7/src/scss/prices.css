@@ -65,6 +65,7 @@
     .prices__working-time {}
     
     .perices__btn-order {
+        position: relative;
         justify-content: center;
         align-self: flex-end;
         width: 136px;
@@ -74,6 +75,12 @@
         color: white;
         text-transform: uppercase;
         font-size: 12px;
+    }
+    .perices__btn-order::after{
+        content: url(../img/dropdown.svg);
+        position: absolute;
+        right:14px;
+        bottom: 7px;
     }
     
     .perices__btn-order--discription {
@@ -100,13 +107,13 @@
     }
     
     .prices__btn-get-offer::after {
-        content:url('../img/Line.svg');
+        content:url(../img/Line.svg);
         right: -0.9rem;
         bottom: 0;
         position: absolute;
         
     }
-    .prices--swiper{
+    .price-swiper{
         display: none;
     }
     }
@@ -115,35 +122,116 @@
         .prices{
             display: none;
         }
-        .prices--swiper{
+        .price-swiper{
             margin: 2rem 1rem 0 2rem;
         }
-        .swiper-slide {
+        .prices__title-swiper{
+            color: #7E7E82;
+            
         }
-        .pices__item--swiper {
+        .prices__list-swiper{
+            position: relative;
+        }
+        .pices__item-swiper.swiper-slide {
             display: flex;
             flex-direction: column;
-            min-width: 260px;
-            height: 200px;
+            justify-content: space-between;
+            width: 260px;
+        }
+        .pices__item-swiper {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            height: 230px;
             background-color: #FFFFFF;
-            margin: 1rem;
+            margin: 1rem 0 1rem 0;
             padding: 1rem;
         }
-        .prices__name--swiper {
+        .pices_item-top{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 0 0 1.5rem 0;
         }
-        .prices__info--swiper {
+        .prices__name-swiper {
+            color: #7E7E82;
+        }
+        .prices__name-swiper--text{
+           
+        }
+        .prices__info-swiper {
             display: flex;
             flex-direction: row;
         }
-        .prices__info-left--swiper {
+        .prices__info-left-swiper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex: 1 1 50%;
         }
-        .prices__price--swiper {
+        .prices__info-left-swiper-first{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 0 0 1.5rem 0;
         }
-        .prices__working-time--swiper {
+        .prices__info-left-swiper-second{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 0 0 0 0;
         }
-        .prices__info-right--swiper {
+        .prices__price-swiper {
+            color: #7E7E82;
         }
-        .perices__btn-order--swiper {
+        .prices__working-time-swiper {
+            color: #7E7E82;
+        }
+        .prices__info-right-swiper {
+            display: flex;
+        }
+        .perices__btn-order-swiper {
+            position: relative;
+            font-weight: 800;
+            margin: 0 0 0 0;
+            justify-content: center;
+            align-self: flex-end;
+            width: 120px;
+            background-color: #FF3E79;
+            border-radius: 20px;
+            padding: 0.5rem;
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            text-align: left;
+        }
+        .perices__btn-order-swiper::after{
+            content: url(../img/dropdown.svg);
+            position: absolute;
+            right:14px;
+            bottom: 7px;
+        }
+        .prices__post-info{
+            margin: 2rem 0 0 0rem;
+            text-align: left;
+        }
+        .prices__promo-agreement{
+            margin: 0 0 1rem 0;
+
+        }
+        .prices__btn-get-offer{
+            position: relative;
+            font-size: 16px;
+            font-weight: 800;
+            color: #1B1C21;
+        }
+        .prices__btn-get-offer::after {
+            content:url(../img/Line.svg);
+            right: -0.9rem;
+            bottom: 0;
+            position: absolute;
+            
         }
     }
     

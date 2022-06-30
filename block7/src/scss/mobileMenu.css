@@ -58,7 +58,7 @@
 }
 
 .close-button svg {
-	background: url(/images/close.svg);
+	background: url('../img/close.svg');
 	background-repeat: no-repeat;
 	display: inline-block;
 	position: absolute;
@@ -116,16 +116,13 @@
 
 .footer-mobile__icons-container {
 	display: flex;
-}
-
-.footer-mobile__icons-container img {
+	gap: 1rem;
 	margin-bottom: 1rem;
-
 }
 
-.footer-mobile__icons-container img:not(:last-child) {
-	margin-right: 1rem;
-}
+
+
+
 
 .footer-mobile__mail {
 	font-size: 18px;

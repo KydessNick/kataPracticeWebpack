@@ -5,18 +5,21 @@
 	display: flex;
 	flex-direction: column;
 	margin: 1rem 35px 0 35px;
-
-}
+	}
 
 
 .repair__title {
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #7E7E82;
+	
 }
 
 .repair__container {
 	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
 .swiper-container {}
@@ -24,10 +27,18 @@
 .repair__list {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+
 
 }
+@media (min-width:1187px) {
+	.repair__list{
+	align-items: center;
+	justify-content: center;
+	}
+}
 
-@media (max-width:767.98px) {
+@media (max-width:911.98px) {
 	.repair__list {
 		display: flex;
 		flex-wrap: nowrap;
@@ -36,6 +47,10 @@
 }
 
 .swiper-wrapper {}
+
+.repair__list  .swiper-slide{
+	width: 240px;
+}
 
 .repair__item {
 	display: flex;
@@ -46,8 +61,21 @@
 	min-height: 160px;
 	padding: 1rem;
 	margin: 2rem 0 0 0;
-
 }
+@media (min-width:911.98px) {
+	.repair__item:last-child{
+	display: none;
+	}
+}
+@media (min-width:1187px) {
+	.repair__item {
+		display: flex;
+	}
+	.repair__item:last-child{
+		display: flex;
+		}
+}
+
 
 .repair__item:not(:last-child) {
 
@@ -70,14 +98,18 @@
 	position: relative;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 911.98px) {
 	.repair__buttons-container {
 		display: none;
 	}
 }
-
+@media (min-width:1187px) {
+	.repair__buttons-container {
+		display: none;
+	}
+}
 .repair__buttons-container::before {
-	content: url(/images/strelochki.svg);
+	content: url('../img/strelochki.svg');
 	display: block;
 	position: absolute;
 }

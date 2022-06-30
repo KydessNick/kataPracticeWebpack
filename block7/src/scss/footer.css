@@ -4,14 +4,25 @@
 .footer {
 	display: flex;
 	flex-direction: row;
-	
+	background-color: #F8F8F8;
 	padding:1rem;
 	margin: 0 0 ;
+	gap: 1rem;
+}
+@media (max-width:767.98px) {
+	.footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-top: 4rem;
+	}
+
 }
 .footer__left-side {
 	flex: 1 1 33%;
 	justify-self: flex-start;
 }
+
 .footer__year {
 }
 .footer__authors {
@@ -25,7 +36,7 @@
 .footer__right-side {
 	flex: 1 1 33%;
 	justify-self: flex-end;
-	text-align: end;
+	
 }
 .footer__notification {
 }

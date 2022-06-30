@@ -1,0 +1,40 @@
+@import './style.scss';
+/* order-call form */
+.order-call {
+	display: none;
+	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}
+
+.order-call__close-btn {
+	margin: 1rem;
+	
+}
+@media (min-width:1439.98px) {
+	.order-call__close-btn {
+		position: absolute;
+		top: -10px;
+		left: -85px;
+		
+	}
+}
+
+.close-btn-form {}
+
+.order-call__form {
+    position: static;
+}
+
+.form-call {}
+
+.form-call__title {}
+
+.form-title {}
+
+.form-call__text {}
+
+.text-agreement {}
+
+.form-call__custom-link {}
+
+.link-agreement {}
+
