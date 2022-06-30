@@ -20,7 +20,8 @@
 
 @media (min-width:1439.98px) {
 	.feedback-form__form {
-		top: -73px;
+		top: -73px
+		;
    }
 }
 
