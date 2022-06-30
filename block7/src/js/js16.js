@@ -49,6 +49,7 @@ trubkaMobileMenu.addEventListener('click', function(){
     orderCallForm.style.display = 'block';
     }
     orderCallForm.style.display = 'block';
+    feedbackFform.style.display = 'none';
 })
 chatMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
@@ -56,6 +57,7 @@ chatMobileMenu.addEventListener('click', function(){
     feedbackFform.style.display = 'block';
     }
     feedbackFform.style.display = 'block';
+    orderCallForm.style.display = 'none';
 })
 
 // feedback form

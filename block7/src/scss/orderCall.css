@@ -21,7 +21,7 @@
 .close-btn-form {}
 
 .order-call__form {
-    position: static;
+    position: relative;
 }
 
 .form-call {}
