@@ -127,9 +127,10 @@
         }
         .prices__title-swiper{
             color: #7E7E82;
-            
+            font-weight: 400;
         }
         .prices__list-swiper{
+            
             position: relative;
         }
         .pices__item-swiper.swiper-slide {
@@ -142,7 +143,7 @@
             display: flex;
             flex-direction: column;
             width: 260px;
-            height: 230px;
+            height: auto;
             background-color: #FFFFFF;
             margin: 1rem 0 1rem 0;
             padding: 1rem;

@@ -33,8 +33,9 @@
 }
 @media (min-width:1187px) {
 	.repair__list{
+		display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	}
 }
 
@@ -43,13 +44,16 @@
 		display: flex;
 		flex-wrap: nowrap;
 		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 1rem;
 	}
 }
 
 .swiper-wrapper {}
 
 .repair__list  .swiper-slide{
-	width: 240px;
+	max-width: 240px;
+	min-width: 240px;
 }
 
 .repair__item {
@@ -79,7 +83,7 @@
 
 .repair__item:not(:last-child) {
 
-	margin-right: 2rem;
+	
 }
 
 .swiper-slide {}
@@ -115,11 +119,28 @@
 }
 
 .repair__btn--more {
+	position: relative;
 	display: block;
 	margin: 0 0 0 2rem;
 }
+.repair__btn--more::before {
+	content: url('../img/strelochki.svg');
+	display: inherit;
+	position: absolute;
+	top: 0;
+	left: -2rem;
+}
 
 .repair__btn--less {
+	position: relative;
 	display: none;
 	margin: 0 0 0 2rem;
+}
+.repair__btn--less::before {
+	content: url('../img/strelochki.svg');
+	transform: rotate(180deg);
+	display: inherit;
+	position: absolute;
+	top: 0;
+	left: -2rem;
 }

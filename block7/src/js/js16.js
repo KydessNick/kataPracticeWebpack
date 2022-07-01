@@ -3,14 +3,17 @@
 export let btnMenu                 =   document.querySelector('.header__burger-button');
 export let mobileMenu              =   document.querySelector('.mobile-menu');
 export let mobileMenuCloseButton   =   document.querySelector('.mobile-menu__close-button');
-export let trubkaMobileMenu        =   document.querySelector('.icon-trubka--mobile');
+export let trubkaMobileMenu        =   document.querySelector('.icon-order-call--mobile');
 export let chatMobileMenu          =   document.querySelector('.icon-chat--mobile');
+
 //  blur
 export let blur                    =   document.querySelector('.blur');
+
 //  icons
-export let trubka                  =   document.querySelector('.icon-trubka');
+export let trubka                  =   document.querySelector('.icon-order-call');
 export let chat                    =   document.querySelector('.icon-chat');
 export let profile                 =   document.querySelector('.icon-profile');
+
 //  forms
 // !feedback form
 export let feedbackFform           =   document.querySelector('.feedback-form');
@@ -18,12 +21,21 @@ export let feedbackFormCloseBtn    =   document.querySelector('.feedback-form__c
 // !oreder call form
 export let orderCallFormCloseBtn   =   document.querySelector('.order-call__close-btn');
 export let orderCallForm           =   document.querySelector('.order-call');
+
+// read more text
+export let readMoreBtn             = document.querySelector('.read-more__text')
+export let readLessBtn             = document.querySelector('.read-less__text')
+export let text768                 = document.querySelector('.text-768px')
+export let text1120                = document.querySelector('.text-1120px')
+export let text1120More            = document.querySelector('.text-1120px--more')
+
 // brends list
 export const windowWidth           = document.documentElement.clientWidth;
 export let brendParent             = document.querySelector('.brends__list');
 export let brendChildren           = brendParent.querySelectorAll('.brends__item');
 export let btnShowMoreBrends       = document.querySelector('.brends__button--more');
 export let btnShowLessBrends       = document.querySelector('.brends__button--less');
+
 // repair list
 export let btnShowMoreRepair       = document.querySelector('.repair__btn--more');
 export let btnShowLessRepair       = document.querySelector('.repair__btn--less');
@@ -81,6 +93,29 @@ orderCallFormCloseBtn.addEventListener('click', function(){
     blur.style.display = 'none';
 })
 
+//read more
+readMoreBtn.addEventListener('click', function(){
+    text768.style.display     = 'block';
+    text1120.style.display    = 'block' ;
+    readMoreBtn.style.display = 'none';
+    readLessBtn.style.display = 'block';
+    text1120More.style.display ='block';
+})
+readLessBtn.addEventListener('click', function(){
+    if(windowWidth < 767){
+        text768.style.display       = 'none';
+        text1120.style.display      = 'none' ;
+        text1120More.style.display  ='none';
+    }else if(windowWidth > 767){
+    text1120.style.display    = 'none' ;
+    text1120More.style.display ='none';
+    } else if(windowWidth >1119){
+        text1120More.style.display ='none';
+    }
+    readMoreBtn.style.display = 'block';
+    readLessBtn.style.display = 'none';
+})
+
 
 //brends list
 console.log(windowWidth)
@@ -106,9 +141,14 @@ btnShowMoreBrends.addEventListener('click', function(){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
         }
+    }else if(windowWidth > 1120){
+        for(let i = 8; i < brendChildren.length; i++){
+            brendChildren[i].style.display = 'flex';
+            console.log(brendChildren[i].style)
+    }
+}
     btnShowMoreBrends.style.display='none'; 
     btnShowLessBrends.style.display='block'; 
-    }
 });
 
 btnShowLessBrends.addEventListener('click', function(){

@@ -15,28 +15,31 @@
         <button type="button" class="header__burger-button  ">
             <img src="./img/BaseBurger.svg" alt="sercle" class="icon-of-burger icon">
         </button>
-        <span class="didve-line--first"></span>
-        <div class="header_logo-container logo">
+        <span class="divide-line--first"></span>
+        <a href="#" class="header__logo-container logo">
             <img src="./img/GroupLogo.svg" alt="CPS logo" class="CPS-group-logo">
-        </div>
+        </a>
         <!-- screen >= 768px -->
-        <button type="button" class="icon--768px header__icon">
-            <img src="./img/call-icon.svg" alt="Call icon" class="header__icon-trubka icon-trubka icon">
-        </button>
-        <button type="button" class="icon--768px header__icon">
-            <img src="./img/chat-icon.svg" alt="Chat icon" class="header__icon-chat icon-chat icon">
-        </button>
-        <button type="button" class="icon--768px header__icon">
-            <img src="./img/profile-icon.svg" alt="profile icon" class="header__icon-profile icon-profile  icon">
-        </button>
+        <div class="header__screen-768-container">
+            <button type="button" class="icon-768px header__icon">
+                <img src="./img/call-icon.svg" alt="Call icon" class="header__icon-order-call icon-order-call icon">
+            </button>
+            <button type="button" class="icon-768px header__icon">
+                <img src="./img/chat-icon.svg" alt="Chat icon" class="header__icon-chat icon-chat icon">
+            </button>
+            <button type="button" class="icon-768px header__icon">
+                <img src="./img/profile-icon.svg" alt="profile icon" class="header__icon-profile icon-profile  icon">
+            </button>
+        </div>
+
         <!-- -->
-        <span class="didve-line--second"></span>
-        <div class=" header__icon">
+        <span class="divide-line--second"></span>
+        <button type="button" class=" header__icon header_repair-icon">
             <img src="./img/repairIcon.svg" alt="Repair icon" class="header__icon-repair icon">
-        </div>
-        <div class="header_check-staus-icon header__icon">
+        </button>
+        <button type="button" class="header_check-staus-icon header__icon">
             <img src="./img/checkstatusIcon.svg" alt="check status icon" class="header__icon-check-staus icon">
-        </div>
+        </button>
 
     </header>
 
@@ -50,40 +53,46 @@
                             height="32px" viewBox="0 0 32 32">Cross mark</svg>
                         <span class="close-button__text">close button</span>
                     </button>
-                    <img src="img/GroupLogo.svg" alt="CPS logo" class="mobile-menu__logo">
+                    <a href="#" class="mobile-menu__logo-link">
+                        <img src="img/GroupLogo.svg" alt="CPS logo" class="mobile-menu__logo">
+                    </a>
                 </div>
-                <img src="img/search.svg" alt="search image" class="mobile-menu__search">
+                <button type="button" class="mobile-menu__search">
+                    <img src="img/search.svg" alt="search image" class="mobile-menu__search">
+                </button>
             </div>
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link ">Ремонт техники</a>
+            <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link ">Ремонт техники</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link mobile-menu__link--active">Услги и сервисы</a>
+                <li class="mobile-menu__nav-item mobile-menu__nav-item--active">
+                    <a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--active">Услги и сервисы</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Корпоративным клиентам</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Корпоративным клиентам</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Продавцам техники</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Продавцам техники</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Партнерам</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Партнерам</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Производителям</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Производителям</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Наши сервисные центры</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Наши сервисные центры</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" class="mobile-menu__link">Контакты</a>
+                <li class="mobile-menu__nav-item">
+                    <a href="#" class="mobile-menu__nav-link">Контакты</a>
                 </li>
             </ul>
+        </nav>
             <div class="mobile-menu__footer-mobile footer-mobile">
                 <div class="footer-mobile__icons-container">
-                    <button type="button" class="  icon-trubka--mobile">
-                        <img src="img/call-icon.svg" alt="Call icon" class=" icon-trubka icon">
+                    <button type="button" class="  icon-order-call--mobile">
+                        <img src="img/call-icon.svg" alt="Call icon" class=" icon-order-call icon">
                     </button>
                     <button type="button" class=" icon-chat--mobile">
                         <img src="img/chat-icon.svg" alt="Chat icon" class=" icon-chat icon">
@@ -145,7 +154,7 @@
             <section class="services">
 
                 <div class="services__tittle-container ">
-                    <h2 class="services__tittle title">Услуги и сервисы</h2>
+                    <h1 class="services__tittle title">Услуги и сервисы</h1>
 
                     <div class="services__icons-text--1120px">
                         <p class="services__text ">Оставить заявку</p>
@@ -159,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="services__container swiper-container">
+                <nav class="services__container swiper-container">
                     <ul class="services__list swiper-wrapper">
                         <li class="services__item active swiper-slide">
                             <a href="#" class="services__text ">Ремонтируемые устройства</a>
@@ -180,7 +189,7 @@
                             <a href="#" class="services__text">Отзывы</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </section>
             <section class="comment">
                 <div class="comment__container">
@@ -188,19 +197,27 @@
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                         отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     </p>
-                    <p class="comment__promo-text text--768px">Мы успешно работаем с 1992 года и заслужили репутацию
+                    <p class="comment__promo-text text-768px">Мы успешно работаем с 1992 года и заслужили репутацию
                         надежного партнера
-                        <span class="text--1120px">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        <span class="text-1120px">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                            производителя., что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
+                            что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и
+                            близким.</span>
+                        <span class="text-1120px--more">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
                             производителя., что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
                             что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и
                             близким.</span>
                     </p>
                     <div class="comment__read-more">
-                        <img src="./img/strelochki.svg" alt="strelochki" class="read-more__icon">
-                        <p class="read-more__text">
+                        
+                        <button type="button" class="read-more__text">
                             Читать далее
-                        </p>
+                        </button>
+                        <button type="button" class="read-less__text">
+                            Свернуть
+                        </button>
                     </div>
                 </div>
                 <div class="comment__pic-container">
@@ -389,7 +406,7 @@
                 </div>
 
                 <div class="repair__buttons-container">
-                    <button type="button" class="repair__btn--more">Показать все</button>
+                    <button type="button" class="repair__btn--more">Показать еще</button>
                     <button type="button" class="repair__btn--less">Скрыть</button>
                 </div>
 

@@ -8,9 +8,10 @@
 	padding: 0px 10px 0 15px;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
-@media (max-width:1119.97px) {
+@media (max-width:1439.97px) {
 	.header {
 		height: 88px;
 		padding: 0px 25px 0 25px;
@@ -34,7 +35,7 @@
 }
 
 /*===================LOGO===================*/
-.header_logo-container {
+.header__logo-container {
 	align-items: center;
 	justify-content: center;
 }
@@ -42,22 +43,55 @@
 .logo {
 	flex: 1 0 97px;
 }
-
-@media (max-width:766.99px) {
-	.icon--768px {
+.header__screen-768-container{
+	display: none;
+}
+@media (min-width:766.98px) {
+	.header__screen-768-container{
+		display: block;
+		margin: 0 25px 0 25px;
+	}
+}
+@media (min-width:1119.98px) {
+	.header__screen-768-container{
+		position: absolute;
+		right: 15px;
+	}
+}
+@media (min-width:1439.98px) {
+	.header__screen-768-container{
+display: none;
+	}
+}
+@media (max-width:766.98px) {
+	.icon-768px {
 		display: none;
 	}
 }
 
-.header__icon-trubka {}
+.header__icon-order-call {}
 
 .header__icon-chat {}
 
 .header__icon-profile {}
 
-.header__icon-repair {}
+.header_repair-icon{
+
+}
+@media (min-width:1119.98px) {
+	.header__icon-repair {
+		display: none;
+	}
+}
+
 
 .header_check-staus-icon {}
+@media (min-width:1119.98px) {
+	.header_check-staus-icon {
+		display: none;
+	}
+}
+
 
 .icon {
 	width: 40px;
@@ -67,10 +101,14 @@
 .header__icon:not(:last-child) {
 	margin-right: 20px;
 }
-
+@media (min-width:1119.98px) {
+	.header__icon:not(:last-child) {
+		margin-right: 20px;
+	}
+}
 /*===============divide lines=================*/
 @media (min-width:766.99px) {
-	.didve-line--first {
+	.divide-line--first {
 		display: block;
 		height: 32px;
 		border: 1px solid #EAEAEA;
@@ -79,7 +117,7 @@
 }
 
 @media (min-width:1118.99px) {
-	.didve-line--first {
+	.divide-line--first {
 		display: none;
 		height: 32px;
 		border: 1px solid #EAEAEA;
@@ -87,13 +125,23 @@
 	}
 }
 
+
 @media (max-width:1118.99px) {
-	.didve-line--second {
+	.divide-line--second {
 		display: block;
 		height: 32px;
 		border: 1px solid #EAEAEA;
 		margin: 0 20px 0 0px;
 	}
 }
+@media (max-width:767.99px) {
+	.divide-line--second {
+		display: none;
 
+	}
+}
 
+/* hover */
+.header button:hover {
+	transform: scale(1.1);
+}
