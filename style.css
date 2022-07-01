@@ -793,7 +793,7 @@ input,
         flex-direction: column;
     }
     
-    .pices__item {
+    .prices__item {
         display: flex;
         position: relative;
         padding: 1rem;
@@ -802,12 +802,12 @@ input,
     
     }
     
-    .pices__item--discription {
+    .prices__item--discription {
         background-color: #F8F8F8;
     }
     
     
-    .pices__item::after {
+    .prices__item::after {
         content: "";
         bottom: 0;
         position: absolute;
@@ -833,7 +833,7 @@ input,
     
     .prices__working-time {}
     
-    .perices__btn-order {
+    .prices__btn-order {
         position: relative;
         justify-content: center;
         align-self: flex-end;
@@ -845,14 +845,14 @@ input,
         text-transform: uppercase;
         font-size: 12px;
     }
-    .perices__btn-order::after{
+    .prices__btn-order::after{
         content: url(./static/dropdown.svg);
         position: absolute;
         right:14px;
         bottom: 7px;
     }
     
-    .perices__btn-order--discription {
+    .prices__btn-order--discription {
         background-color: inherit;
     }
     
@@ -902,13 +902,13 @@ input,
             
             position: relative;
         }
-        .pices__item-swiper.swiper-slide {
+        .prices__item-swiper.swiper-slide {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 260px;
         }
-        .pices__item-swiper {
+        .prices__item-swiper {
             display: flex;
             flex-direction: column;
             width: 260px;
@@ -917,7 +917,7 @@ input,
             margin: 1rem 0 1rem 0;
             padding: 1rem;
         }
-        .pices_item-top{
+        .prices_item-top{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
@@ -961,7 +961,7 @@ input,
         .prices__info-right-swiper {
             display: flex;
         }
-        .perices__btn-order-swiper {
+        .prices__btn-order-swiper {
             position: relative;
             font-weight: 800;
             margin: 0 0 0 0;
@@ -976,7 +976,7 @@ input,
             font-size: 12px;
             text-align: left;
         }
-        .perices__btn-order-swiper::after{
+        .prices__btn-order-swiper::after{
             content: url(./static/dropdown.svg);
             position: absolute;
             right:14px;
