@@ -25,7 +25,7 @@
 	flex-wrap: wrap;
 	margin-top: 2rem;
 	gap: 1rem;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 @media (max-width: 767.98px) {
@@ -549,10 +549,22 @@ main {
 .feedback-form {
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
 }
-.feedback-form-initial{
-	display: flex;
-	right: -322px;
-	transform: translateX(0px);
+
+@media (max-width:1439.98px) {
+	.feedback-form-initial{
+		display: flex;
+		right: -342px;
+		transform: translateX(0px);
+	}
+	
+}
+@media (min-width:1439.99px) {
+	.feedback-form-initial{
+		display: flex;
+		right: -400px;
+		transform: translateX(0px);
+	}
+	
 }
 
 
@@ -641,18 +653,19 @@ input,
 }
 @media (max-width:1439.97px) {
 	.mobile-menu {
-		
 		top: 0;
 	}
 }
 
-.mobile-menu--initial{
-	/*transform: translateX(0px);*/
-	/*left: 0;*/
-	left: -321px;
-	transform: translateX(0px);
+@media (max-width: 1439.98px) {
+	.mobile-menu--initial{
+		/*transform: translateX(0px);*/
+		/*left: 0;*/
+		left: -321px;
+		transform: translateX(0px);
+	}
+	
 }
-
 
 .mobile-menu__header {
 	display: flex;
@@ -747,7 +760,9 @@ input,
 	flex: 0 0 auto;
 }
 
-.footer-mobile {}
+.footer-mobile {
+	font-family: 'TTLakes-Bold';
+}
 
 .footer-mobile__icons-container {
 	display: flex;
@@ -770,6 +785,7 @@ input,
 	letter-spacing: -0.6px;
 	text-align: left;
 	margin: 1rem 0 3rem 0;
+	
 }
 
 .footer-mobile__languages {
@@ -1044,7 +1060,8 @@ input,
 .repair {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 35px 0 35px;
+	margin: 1rem 0 0 0;
+	padding: 0 25px 0 25px;
 	}
 
 
@@ -1071,11 +1088,12 @@ input,
 
 
 }
-@media (min-width:1187px) {
+@media (min-width:912px) {
 	.repair__list{
 		display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	gap: 1rem;
 	}
 }
 
@@ -1111,7 +1129,7 @@ input,
 	display: none;
 	}
 }
-@media (min-width:1187px) {
+@media (min-width:1215px) {
 	.repair__item {
 		display: flex;
 	}
@@ -1147,7 +1165,7 @@ input,
 		display: none;
 	}
 }
-@media (min-width:1187px) {
+@media (min-width:1215px) {
 	.repair__buttons-container {
 		display: none;
 	}
@@ -1351,9 +1369,18 @@ h1::before {
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
 	position: absolute;
 }
-.order-call--initial {
-	right: -321px;
-	transform: translateX(0px);
+
+@media (max-width:1439.98px) {
+	.order-call--initial {
+		right: -342px;
+		transform: translateX(0px);
+	}
+}
+@media (min-width:1439.9px) {
+	.order-call--initial {
+		right: -400px;
+		transform: translateX(0px);
+	}
 }
 
 
@@ -1414,18 +1441,25 @@ $sub-titile: #7E7E82;
 }
 /* Bold */
 @font-face {
-	font-family: 'TTLakes';
+	font-family: 'TTLakes-bold';
 	font-style: normal;
 	font-weight: 800;
 	src: url(./fonts/TTLakes-Bold.ttf) format("ttf");
 	src: url(./fonts/TTLakes-Bold.woff) format("woff");
+}
+@font-face {
+	font-family: 'TT Lakes Compressed Bold';
+	font-style: normal;
+	font-weight: 800;
+	src: url(./fonts/TTLakesCompressed-Bold.ttf) format("ttf");
+	src: url(./fonts/TTLakesCompressed-Bold.woff) format("woff");
 }
 
 
 body {
   padding: 0rem;
   margin: 0;
-  font-family: TTLakes, sans-serif,;
+  font-family: 'TTLakes', sans-serif, 'TT Lakes Compressed Bold';
   background-color: $bgColor;
   color: $text;
 }
@@ -1595,16 +1629,23 @@ display: none;
 
 /* Bold */
 @font-face {
-  font-family: 'TTLakes';
+  font-family: 'TTLakes-bold';
   font-style: normal;
   font-weight: 800;
   src: url(./fonts/TTLakes-Bold.ttf) format("ttf");
   src: url(./fonts/TTLakes-Bold.woff) format("woff"); }
 
+@font-face {
+  font-family: 'TT Lakes Compressed Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: url(./fonts/TTLakesCompressed-Bold.ttf) format("ttf");
+  src: url(./fonts/TTLakesCompressed-Bold.woff) format("woff"); }
+
 body {
   padding: 0rem;
   margin: 0;
-  font-family: TTLakes, sans-serif;
+  font-family: 'TTLakes', sans-serif, 'TT Lakes Compressed Bold';
   background-color: #fff;
   color: #1B1C21; }
 
