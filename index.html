@@ -21,23 +21,23 @@
         </a>
         
         <div class="header__screen-768-container">
-            <button type="button" class="icon-768px header__icon">
+            <button type="button" class="icon-768px header__button">
                 <img src="./img/call-icon.svg" alt="Call icon" class="header__icon-order-call icon-order-call icon">
             </button>
-            <button type="button" class="icon-768px header__icon">
+            <button type="button" class="icon-768px header__button">
                 <img src="./img/chat-icon.svg" alt="Chat icon" class="header__icon-chat icon-chat icon">
             </button>
-            <button type="button" class="icon-768px header__icon">
+            <button type="button" class="icon-768px header__button">
                 <img src="./img/profile-icon.svg" alt="profile icon" class="header__icon-profile icon-profile icon">
             </button>
         </div>
 
         
         <span class="divide-line--second"></span>
-        <button type="button" class="header__icon header_repair-icon">
+        <button type="button" class="header__button header_repair-icon">
             <img src="./img/repairIcon.svg" alt="Repair icon" class="header__icon-repair icon">
         </button>
-        <button type="button" class="header_check-staus-icon header__icon">
+        <button type="button" class="header_check-staus-icon header__button">
             <img src="./img/checkstatusIcon.svg" alt="check status icon" class="header__icon-check-staus icon">
         </button>
 
@@ -45,7 +45,7 @@
 
     <div class="wrapper">
         
-        <aside class="mobile-menu">
+        <aside class="mobile-menu mobile-menu--initial">
             <div class="mobile-menu__header">
                 <div class="mobile-menu__left-section-header">
                     <button class="mobile-menu__close-button close-button">
@@ -88,7 +88,7 @@
                 </li>
             </ul>
         </nav>
-            <div class="mobile-menu__footer-mobile footer-mobile">
+            <footer class="mobile-menu__footer-mobile footer-mobile">
                 <div class="footer-mobile__icons-container">
                     <button type="button" class="icon-order-call--mobile">
                         <img src="img/call-icon.svg" alt="Call icon" class="icon-order-call icon">
@@ -107,20 +107,20 @@
                     <a href="" class="footer-mobile__en">EN</a>
                     <a href="" class="footer-mobile__ch">CH</a>
                 </div>
-            </div>
+            </footer>
         </aside>
         
-        <div class="feedback-form form-container">
+        <div class="feedback-form feedback-form-initial form-container">
             <button class="feedback-form__close-btn close-button">
-                <svg class="mobile-menu__close-icon" aria-hidden="true" focusable="false" width="32px" height="32px" viewBox="0 0 32 32">Cross mark</svg>
+                <svg class="feedback-form__close-icon" aria-hidden="true" focusable="false" width="32px" height="32px" viewBox="0 0 32 32">Cross mark</svg>
             <span class="close-button__text">text</span>
             </button>
-            <form class="feedback-form__form form" action="#" method="get">
+            <form class="feedback-form__form-self form" action="#" method="get">
                 <h2 class="feedback-form__title form-title">Обратная связь</h2>
-                <input type="text" name="userName" value="" placeholder="Имя">
-                <input type="tel" name="userTel" value="" placeholder="Телефон">
-                <input type="email" name="userMail" value="" placeholder="Электонная почта">
-                <textarea class="feedback-form__textarea textarea" name="massage" id="" cols="30" rows="6" placeholder="Сообщение"></textarea>
+                <input type="text" name="userName" value="" placeholder="Имя" required>
+                <input type="tel" name="userTel" value="" placeholder="Телефон" required>
+                <input type="email" name="userMail" value="" placeholder="Электонная почта" required>
+                <textarea class="feedback-form__textarea textarea" name="massage" id="" cols="30" rows="6" placeholder="Сообщение" required></textarea>
                 <p class="feedback-form__text text-agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback-form__custom-link link-agreement">обработку персональных</a> данных и
                     соглашаетесь с нашей <a href="#" class="feedback-form__custom-link link-agreement">политикой
                         конфиденциальности</a></p>
@@ -129,14 +129,14 @@
         </div>
 
         
-        <div class="order-call form-container">
+        <div class="order-call order-call--initial form-container">
             <button class="order-call__close-btn close-button">
                 <svg class="mobile-menu__close-icon" aria-hidden="true" focusable="false" width="32px" height="32px" viewBox="0 0 32 32">Cross mark</svg>
             <span class="close-button__text">close button</span>
             </button>
             <form action="#" class="order-call__form form-call form" method="get">
                 <h2 class="form-call__title form-title">Заказать звонок</h2>
-                <input type="tel" name="userTel" id="" placeholder="Телефон">
+                <input type="tel" name="userTel" id="" placeholder="Телефон" required>
                 <p class="form-call__text text-agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="form-call__custom-link link-agreement">обработку персональных</a> данных и соглашаетесь с
                     нашей <a href="#" class="form-call__custom-link link-agreement">политикой конфиденциальности</a></p>
                 <button class="form-call__submit form-submit" type="submit">Отправить</button>
@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="comment__pic-container">
-                    <img src="./img/_MG_3223.jpg" alt="Picture CPS" class="picture-CPS">
+                    <img src="../src/img/_MG_3223.jpg" alt="Picture CPS" class="picture-CPS">
                 </div>
             </section>
             
