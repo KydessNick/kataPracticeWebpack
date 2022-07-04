@@ -192,6 +192,7 @@
         .prices__info-right-swiper {
             display: flex;
         }
+       
         .prices__btn-order-swiper {
             position: relative;
             font-weight: 800;

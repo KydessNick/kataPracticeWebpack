@@ -112,23 +112,26 @@
 		display: none;
 	}
 }
+/*
 .repair__buttons-container::before {
 	content: url('../img/strelochki.svg');
 	display: block;
 	position: absolute;
 }
-
+*/
 .repair__btn--more {
 	position: relative;
 	display: block;
 	margin: 0 0 0 2rem;
 }
+
 .repair__btn--more::before {
 	content: url('../img/strelochki.svg');
 	display: inherit;
 	position: absolute;
 	top: 0;
 	left: -2rem;
+	
 }
 
 .repair__btn--less {

@@ -1,9 +1,16 @@
 @import './style.scss';
 /* order-call form */
 .order-call {
-	display: none;
+	display: flex;
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+	position: absolute;
 }
+.order-call--initial {
+	right: -321px;
+	transform: translateX(0px);
+}
+
+
 
 .order-call__close-btn {
 	margin: 1rem;

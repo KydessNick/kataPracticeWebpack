@@ -5,6 +5,7 @@ export let mobileMenu              =   document.querySelector('.mobile-menu');
 export let mobileMenuCloseButton   =   document.querySelector('.mobile-menu__close-button');
 export let trubkaMobileMenu        =   document.querySelector('.icon-order-call--mobile');
 export let chatMobileMenu          =   document.querySelector('.icon-chat--mobile');
+export let mobileMenuAnimation     =   document.querySelector('.mobile-menu--initial');
 
 //  blur
 export let blur                    =   document.querySelector('.blur');
@@ -18,9 +19,11 @@ export let profile                 =   document.querySelector('.icon-profile');
 // !feedback form
 export let feedbackFform           =   document.querySelector('.feedback-form');
 export let feedbackFormCloseBtn    =   document.querySelector('.feedback-form__close-btn');
+export let feedbackFormAnimation    =   document.querySelector('.feedback-form-initial');
 // !oreder call form
 export let orderCallFormCloseBtn   =   document.querySelector('.order-call__close-btn');
 export let orderCallForm           =   document.querySelector('.order-call');
+export let orderCallAnimation      =   document.querySelector('.order-call--initial');
 
 // read more text
 export let readMoreBtn             = document.querySelector('.read-more__text')
@@ -46,50 +49,68 @@ export let blurBck                 = document.querySelector('.blur');
 
 
 btnMenu.addEventListener('click', function(){
-    mobileMenu.style.display = 'flex';
+   // mobileMenu.style.display = 'flex';
+    mobileMenuAnimation.style.transform  ='translateX(322px)';
+    mobileMenuAnimation.style.transition ='ease-in-out 0.7s';
     blur.style.display = 'flex';
+   
 
 })
 mobileMenuCloseButton.addEventListener('click', function(){
-    
-    mobileMenu.style.display = 'none';
+   // mobileMenu.style.display = 'none';
+   mobileMenuAnimation.style.transform  ='translateX(-322px)';
+   mobileMenuAnimation.style.transition ='ease-in-out 0.7s';
     blur.style.display = 'none';
 })
 trubkaMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
-    mobileMenu.style.display = 'none';
-    orderCallForm.style.display = 'block';
+        mobileMenuAnimation.style.transform  ='translateX(-322px)';
+
+        orderCallAnimation.style.transform  ='translateX(-322px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
     }
-    orderCallForm.style.display = 'block';
-    feedbackFform.style.display = 'none';
+    orderCallAnimation.style.transform  ='translateX(-322px)';
+    orderCallAnimation.style.transition ='ease-in-out 0.7s';
 })
 chatMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
-    mobileMenu.style.display = 'none';
-    feedbackFform.style.display = 'block';
+    mobileMenuAnimation.style.transform  ='translateX(-322px)';
+
+    feedbackFormAnimation.style.transform  ='translateX(-322px)';
+    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
     }
-    feedbackFform.style.display = 'block';
-    orderCallForm.style.display = 'none';
+    feedbackFormAnimation.style.transform  ='translateX(-322px)';
+    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
 })
 
 // feedback form
 chat.addEventListener('click', function(){
-    feedbackFform.style.display = 'flex';
+    
+    feedbackFormAnimation.style.transform  ='translateX(-322px)';
+    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+
+    
     blur.style.display = 'flex';
 } )
 feedbackFormCloseBtn.addEventListener('click', function(){
-    feedbackFform.style.display = 'none';
+    feedbackFormAnimation.style.transform  ='translateX(322px)';
+    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+
     blur.style.display = 'none';
 })
 
 //oreder call form
 trubka.addEventListener('click', function(){
-    orderCallForm.style.display = 'flex';
+    
+    orderCallAnimation.style.transform  ='translateX(-322px)';
+    orderCallAnimation.style.transition ='ease-in-out 0.7s';
     blur.style.display = 'flex';
     console.log('asdasd')
 } )
 orderCallFormCloseBtn.addEventListener('click', function(){
-    orderCallForm.style.display = 'none';
+    orderCallAnimation.style.transform  ='translateX(322px)';
+    orderCallAnimation.style.transition ='ease-in-out 0.7s';
+  
     blur.style.display = 'none';
 })
 
@@ -106,7 +127,7 @@ readLessBtn.addEventListener('click', function(){
         text768.style.display       = 'none';
         text1120.style.display      = 'none' ;
         text1120More.style.display  ='none';
-    }else if(windowWidth > 767){
+    }else if(windowWidth < 1119){
     text1120.style.display    = 'none' ;
     text1120More.style.display ='none';
     } else if(windowWidth >1119){

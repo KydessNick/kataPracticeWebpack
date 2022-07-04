@@ -98,11 +98,11 @@ display: none;
 	height: 40px;
 }
 
-.header__icon:not(:last-child) {
+.header__button:not(:last-child) {
 	margin-right: 20px;
 }
 @media (min-width:1119.98px) {
-	.header__icon:not(:last-child) {
+	.header__button:not(:last-child) {
 		margin-right: 20px;
 	}
 }
@@ -116,7 +116,7 @@ display: none;
 	}
 }
 
-@media (min-width:1118.99px) {
+@media (min-width:1119.99px) {
 	.divide-line--first {
 		display: none;
 		height: 32px;
@@ -126,7 +126,7 @@ display: none;
 }
 
 
-@media (max-width:1118.99px) {
+@media (max-width:1119.99px) {
 	.divide-line--second {
 		display: block;
 		height: 32px;
