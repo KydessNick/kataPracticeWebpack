@@ -68,9 +68,15 @@ trubkaMobileMenu.addEventListener('click', function(){
 
         orderCallAnimation.style.transform  ='translateX(-322px)';
         orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    } else if(windowWidth> 1439){
+        
+
+        orderCallAnimation.style.transform  ='translateX(-400px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
     }
-    orderCallAnimation.style.transform  ='translateX(-322px)';
-    orderCallAnimation.style.transition ='ease-in-out 0.7s';
+
+
+    blur.style.display = 'flex';
 })
 chatMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
@@ -78,39 +84,60 @@ chatMobileMenu.addEventListener('click', function(){
 
     feedbackFormAnimation.style.transform  ='translateX(-322px)';
     feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    } else if(windowWidth >1439){
+        
+        feedbackFormAnimation.style.transform  ='translateX(-400px)';
+        feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
     }
-    feedbackFormAnimation.style.transform  ='translateX(-322px)';
-    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    blur.style.display = 'flex';
 })
 
 // feedback form
 chat.addEventListener('click', function(){
-    
-    feedbackFormAnimation.style.transform  ='translateX(-322px)';
-    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    if(windowWidth<1440){
+        feedbackFormAnimation.style.transform  ='translateX(-342px)';
+        feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
 
+    }else if(windowWidth>1439){
+        feedbackFormAnimation.style.transform  ='translateX(-400px)';
+        feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    }
     
     blur.style.display = 'flex';
 } )
 feedbackFormCloseBtn.addEventListener('click', function(){
-    feedbackFormAnimation.style.transform  ='translateX(322px)';
-    feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    if(windowWidth<1440){
+        feedbackFormAnimation.style.transform  ='translateX(342px)';
+        feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    }else if(windowWidth > 1439){
+        feedbackFormAnimation.style.transform  ='translateX(400px)';
+        feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
+    }
 
     blur.style.display = 'none';
 })
 
 //oreder call form
 trubka.addEventListener('click', function(){
-    
-    orderCallAnimation.style.transform  ='translateX(-322px)';
-    orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    if(windowWidth<1440){
+        orderCallAnimation.style.transform  ='translateX(-342px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    } else if( windowWidth >1439){
+        orderCallAnimation.style.transform  ='translateX(-400px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    }
+
     blur.style.display = 'flex';
     console.log('asdasd')
 } )
 orderCallFormCloseBtn.addEventListener('click', function(){
-    orderCallAnimation.style.transform  ='translateX(322px)';
-    orderCallAnimation.style.transition ='ease-in-out 0.7s';
-  
+    if( windowWidth < 1440){
+        orderCallAnimation.style.transform  ='translateX(342px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    }else if( windowWidth >1439){
+        orderCallAnimation.style.transform  ='translateX(400px)';
+        orderCallAnimation.style.transition ='ease-in-out 0.7s';
+    }  
     blur.style.display = 'none';
 })
 
@@ -141,29 +168,39 @@ readLessBtn.addEventListener('click', function(){
 //brends list
 console.log(windowWidth)
 function brendsELementCheck(){
-    if(windowWidth > 767 && windowWidth < 1120){
+    if(windowWidth > 767 && windowWidth < 1075){
         for(let i = 0; i < 6; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
         } 
 
-    }else if(windowWidth > 1120 ){
+    }else if(windowWidth > 1074 && windowWidth < 1330 ){
         for(let i = 0; i < 8; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
         } 
+    } else if(windowWidth > 1329 && windowWidth < 1440){
+        for(let i = 0; i < 10; i++){
+            brendChildren[i].style.display = 'flex';
+            console.log(brendChildren[i].style)
+        } 
+    } else if(windowWidth >1439){
+        for(let i = 0; i < 10; i++){
+            brendChildren[i].style.display = 'flex';
+            console.log(brendChildren[i].style)
     }
+}
 }
 brendsELementCheck();
 
 btnShowMoreBrends.addEventListener('click', function(){
     if (windowWidth > 768 && windowWidth < 1120){
-        for(let i = 8; i < brendChildren.length; i++){
+        for(let i = 0; i < brendChildren.length; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
         }
     }else if(windowWidth > 1120){
-        for(let i = 8; i < brendChildren.length; i++){
+        for(let i = 0; i < brendChildren.length; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
     }
@@ -183,7 +220,7 @@ btnShowLessBrends.addEventListener('click', function(){
 });
 //repair section
 function reapairELementCheck(){
-    if(windowWidth > 911 && windowWidth < 1120){
+    if(windowWidth > 910 && windowWidth < 1506){
         for(let i = 0; i < 3; i++){
             repairChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
@@ -191,15 +228,18 @@ function reapairELementCheck(){
 
     }
 }
-
+console.log(  repairChildren)
 btnShowMoreRepair.addEventListener('click', function(){
-        repairChildren[3].style.display = 'flex'; 
+    for(let i = 0; i < repairChildren.length; i++)
+        repairChildren[i].style.display = 'flex'; 
         btnShowMoreRepair.style.display='none'
         btnShowLessRepair.style.display='block'
+        
 }
 )
 btnShowLessRepair.addEventListener('click', function(){
-        repairChildren[3].style.display = 'none'; 
+    for(let i=3; i < repairChildren.length; i++)
+        repairChildren[i].style.display = 'none'; 
         btnShowMoreRepair.style.display='block'
         btnShowLessRepair.style.display='none'
 }
@@ -208,13 +248,21 @@ btnShowLessRepair.addEventListener('click', function(){
 reapairELementCheck()
 
 //blur
-console.log(repairChildren[3])
-blurBck.addEventListener('click', function(){
-    mobileMenu.style.display='none';
-    feedbackFform.style.display='none';
-    orderCallForm.style.display='none';
-    blurBck.style.display='none';
 
+blurBck.addEventListener('click', function(){
+    if(windowWidth <1440){
+        
+        mobileMenu.style.transform  ='translateX(-321px)';
+    
+        feedbackFormAnimation.style.transform  ='translateX(342px)';
+    
+        orderCallForm.style.transform  ='translateX(342px)';
+    }else if(windowWidth >1439){
+     
+        feedbackFormAnimation.style.transform  ='translateX(400px)';
+        orderCallForm.style.transform  ='translateX(400px)';
+    }
+    blurBck.style.display='none';
 })
 
 
@@ -233,3 +281,4 @@ var ro = new ResizeObserver(entries => {
   ro.observe(brendParent);
 
 console.log(brendChildren[1])
+console.log()

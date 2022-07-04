@@ -32,18 +32,25 @@ $sub-titile: #7E7E82;
 }
 /* Bold */
 @font-face {
-	font-family: 'TTLakes';
+	font-family: 'TTLakes-bold';
 	font-style: normal;
 	font-weight: 800;
 	src: url(../fonts/TTLakes-Bold.ttf) format("ttf");
 	src: url(../fonts/TTLakes-Bold.woff) format("woff");
+}
+@font-face {
+	font-family: 'TT Lakes Compressed Bold';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../fonts/TTLakesCompressed-Bold.ttf) format("ttf");
+	src: url(../fonts/TTLakesCompressed-Bold.woff) format("woff");
 }
 
 
 body {
   padding: 0rem;
   margin: 0;
-  font-family: TTLakes, sans-serif,;
+  font-family: 'TTLakes', sans-serif, 'TT Lakes Compressed Bold';
   background-color: $bgColor;
   color: $text;
 }

@@ -4,7 +4,8 @@
 .repair {
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 35px 0 35px;
+	margin: 1rem 0 0 0;
+	padding: 0 25px 0 25px;
 	}
 
 
@@ -31,11 +32,12 @@
 
 
 }
-@media (min-width:1187px) {
+@media (min-width:912px) {
 	.repair__list{
 		display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	gap: 1rem;
 	}
 }
 
@@ -71,7 +73,7 @@
 	display: none;
 	}
 }
-@media (min-width:1187px) {
+@media (min-width:1215px) {
 	.repair__item {
 		display: flex;
 	}
@@ -107,7 +109,7 @@
 		display: none;
 	}
 }
-@media (min-width:1187px) {
+@media (min-width:1215px) {
 	.repair__buttons-container {
 		display: none;
 	}

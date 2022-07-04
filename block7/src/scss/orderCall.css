@@ -5,9 +5,18 @@
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
 	position: absolute;
 }
-.order-call--initial {
-	right: -321px;
-	transform: translateX(0px);
+
+@media (max-width:1439.98px) {
+	.order-call--initial {
+		right: -342px;
+		transform: translateX(0px);
+	}
+}
+@media (min-width:1439.9px) {
+	.order-call--initial {
+		right: -400px;
+		transform: translateX(0px);
+	}
 }
 
 

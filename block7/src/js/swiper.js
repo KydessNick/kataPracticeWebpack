@@ -13,7 +13,7 @@ const repairSwiper = new Swiper('.repair__container', {
         clickable: true,
     },
     breakpoints:{
-        911:{
+        912:{
             enabled: false
         }
     },

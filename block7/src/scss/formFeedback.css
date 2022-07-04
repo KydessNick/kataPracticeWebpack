@@ -4,10 +4,22 @@
 .feedback-form {
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
 }
-.feedback-form-initial{
-	display: flex;
-	right: -322px;
-	transform: translateX(0px);
+
+@media (max-width:1439.98px) {
+	.feedback-form-initial{
+		display: flex;
+		right: -342px;
+		transform: translateX(0px);
+	}
+	
+}
+@media (min-width:1439.99px) {
+	.feedback-form-initial{
+		display: flex;
+		right: -400px;
+		transform: translateX(0px);
+	}
+	
 }
 
 
