@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	margin: 1rem 0 0 0;
-	padding: 0 25px 0 25px;
+	padding: 0 8px 0 25px;
 	}
 
 
@@ -13,7 +13,8 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #7E7E82;
-	
+	position: relative;
+	z-index: 2;
 }
 
 .repair__container {
@@ -23,7 +24,7 @@
 	flex-wrap: nowrap;
 }
 
-.swiper-container {}
+.brends-swiper {}
 
 .repair__list {
 	display: flex;
@@ -32,21 +33,22 @@
 
 
 }
-@media (min-width:912px) {
+@media (min-width:767.98px) {
 	.repair__list{
-		display: flex;
+	display: flex;
+	
 	align-items: center;
-	justify-content: space-between;
-	gap: 1rem;
+	justify-content:flex-start;
+	
 	}
 }
 
-@media (max-width:911.98px) {
+@media (max-width:767.97px) {
 	.repair__list {
 		display: flex;
 		flex-wrap: nowrap;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-start;
 		margin-bottom: 1rem;
 	}
 }
@@ -56,6 +58,19 @@
 .repair__list  .swiper-slide{
 	max-width: 240px;
 	min-width: 240px;
+	margin-right: 15px !important;
+}
+@media (min-width:767.98px) {
+	.repair__list  .swiper-slide{
+		min-width: 223px;
+		max-width: 223px;
+	}
+}
+@media (min-width:1439.98px) {
+	.repair__list  .swiper-slide{
+		max-width: 240px;
+		min-width: 240px;
+	}
 }
 
 .repair__item {
@@ -67,6 +82,13 @@
 	min-height: 160px;
 	padding: 1rem;
 	margin: 2rem 0 0 0;
+}
+@media (min-width: 767.98px) {
+	.repair__item{
+		display: none;
+		min-width: 223px;
+		max-width: 223px;
+	}
 }
 @media (min-width:911.98px) {
 	.repair__item:last-child{
@@ -81,7 +103,14 @@
 		display: flex;
 		}
 }
+@media (min-width:1439.98px) {
+	.repair__item {
+		min-width: 240px;
+		max-width: 240px;
 
+	
+	}
+}
 
 .repair__item:not(:last-child) {
 
@@ -104,14 +133,14 @@
 	position: relative;
 }
 
-@media (max-width: 911.98px) {
+@media (max-width: 767.98px) {
 	.repair__buttons-container {
 		display: none;
 	}
 }
 @media (min-width:1215px) {
 	.repair__buttons-container {
-		display: none;
+		
 	}
 }
 /*
@@ -121,13 +150,13 @@
 	position: absolute;
 }
 */
-.repair__btn--more {
+.repair__btn-more {
 	position: relative;
 	display: block;
 	margin: 0 0 0 2rem;
 }
 
-.repair__btn--more::before {
+.repair__btn-more::before {
 	content: url('../img/strelochki.svg');
 	display: inherit;
 	position: absolute;
@@ -136,12 +165,12 @@
 	
 }
 
-.repair__btn--less {
+.repair__btn-less {
 	position: relative;
 	display: none;
 	margin: 0 0 0 2rem;
 }
-.repair__btn--less::before {
+.repair__btn-less::before {
 	content: url('../img/strelochki.svg');
 	transform: rotate(180deg);
 	display: inherit;

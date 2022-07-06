@@ -62,6 +62,16 @@ button {
 button:hover {
 	cursor: pointer;
 }
+.gradient-title::before {
+	content: '';
+	position: absolute;
+	top:-16px;
+	left: 0;
+	height: 56px;
+	width: 100vw; 
+	background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
+	z-index: -1;
+}
 
 /*common settings form*/
 .form-container {

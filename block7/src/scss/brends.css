@@ -18,6 +18,8 @@
 	color: #7E7E82;
 	font-size: 24px;
 	margin: 24px 0 0 0;
+	position: relative;
+	z-index: 2;
 }
 
 
@@ -26,7 +28,7 @@
 	flex-wrap: wrap;
 	margin-top: 2rem;
 	gap: 1rem;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 @media (max-width: 767.98px) {
@@ -45,6 +47,20 @@
 	border-radius: 5px;
 
 }
+@media (min-width:767.98px) {
+	.brends__item {
+		min-width: 223px;
+
+	
+	}
+}
+@media (min-width:1439.98px) {
+	.brends__item {
+		min-width: 240px;
+
+	
+	}
+}
 
 @media (min-width: 767.98px) {
 	.brends__item {
@@ -56,12 +72,12 @@
 
 
 /*========      SWIPER   BRENDS  ===============*/
-.brends__list--swiper {
+.brends-swiper__list {
 	display: none;
 }
 
 @media (max-width: 767.97px) {
-	.brends__list--swiper {
+	.brends-swiper__list {
 		position: relative;
 		display: flex;
 		flex-direction: row;
@@ -72,11 +88,11 @@
 		margin-top: 2rem;
 	}
 
-	.brends__list--swiper-wripper {
+	.brends-swiper__swiper-wripper {
 
 	}
 
-	.brends__item--swiper {
+	.brends-swiper__item {
 		display: flex;
 		justify-content: space-between;
 		background-color: #ffffff;
@@ -89,9 +105,7 @@
 
 	}
 
-
-
-	.brends__icon--swiper {
+	.brends-swiper__icon {
 		align-self: center;
 	}
 }
@@ -119,6 +133,15 @@
 	max-width: 240px;
 }
 
+.brends__button-item {
+	background-image: url('../img/go-btn.svg');
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	text-align: center;
+}
 /*================================================*/
 
 
@@ -126,7 +149,7 @@
 	align-self: center;
 }
 
-.brends__button-item {
+.brends-swiper__button {
 	background-image: url('../img/go-btn.svg');
 	background-repeat: no-repeat;
 	background-color: #ffffff;
@@ -159,12 +182,12 @@
 	}
 }
 
-.brends__button--more {
+.brends__buttons-container .brends__button-more {
 	position: relative;
 	display: block;
 	margin: 0 0 0 2rem;
 }
-.brends__button--more::before {
+.brends__buttons-container .brends__button-more::before {
 	content: url('../img/strelochki.svg');
 	display: inherit;
 	position: absolute;
@@ -172,12 +195,12 @@
 	left: -2rem;
 }
 
-.brends__button--less {
+.brends__buttons-container .brends__button-less {
 	position: relative;
-	display: none;
+	display: none ;
 	margin: 0 0 0 2rem;
 }
-.brends__button--less::before {
+.brends__buttons-container .brends__button-less::before {
 	content: url('../img/strelochki.svg');
 	transform: rotate(180deg);
 	display: inherit;

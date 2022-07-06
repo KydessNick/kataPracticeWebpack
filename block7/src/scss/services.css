@@ -62,25 +62,26 @@ h1::before {
 }
 @media (min-width:1439.98px) {
 	h1::before{
-		display:  none;
+		left: -56px;
+		border: 0px solid #000000;
 	}
 }
 
-.services__icons-text--1120px {
+.services__icons-text-1120px {
 	display: none;
 }
 
 @media (min-width:1119.97px) {
-	.services__icons-text--1120px {
+	.services__icons-text-1120px {
 		display: flex;
 		align-items: center;
 	}
 
-	.services__icons-text--1120px:not(:last-child) {
+	.services__icons-text-1120px:not(:last-child) {
 		margin-right: 30px;
 	}
 }
-.services__icons-text--1120px .icon:hover{
+.services__icons-text-1120px .icon:hover{
 	transform: scale(1.1);
 }
 
@@ -91,7 +92,7 @@ h1::before {
 
 .icon-repair {}
 
-.header__icon-check-staus {}
+.header__icon-check-status {}
 
 /*=========================list services===============================*/
 .services__container {

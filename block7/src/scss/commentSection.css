@@ -57,19 +57,19 @@
 		display: block;
 	}
 }
-.text-1120px--more{
+.text-1120px-more{
 	display: none ;
 }
 
 
-.comment__read-more {
+.comment__read-btns {
 	margin: 25px 0;
 	display: flex;
 }
 
 .read-more__icon {}
 
-.read-more__text {
+.read-btns__text-more {
 	display: block;
 	margin-left: 15px;
 	font-weight: 400;
@@ -77,22 +77,23 @@
 	position: relative;
 	
 }
-.read-more__text::before {
+.read-btns__text-more::before {
 content: url(../img/strelochki.svg);
 position: absolute;
 left: -1rem;
 top: 0;
 display: inherit;
 }
-.read-less__text{
+.read-btns__text-less{
 	margin-left: 15px;
 	font-weight: 400;
 	color: #1B1C21;
 	display: none;
 	position: relative;
 }
-.read-less__text::before {
+.read-btns__text-less::before {
 	content: url(../img/strelochki.svg);
+	transform: rotate(180deg);
 	position: absolute;
 	left: -1rem;
 	top: 0;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,13 @@
         <button type="button" class="header__burger-button  ">
             <img src="./img/BaseBurger.svg" alt="sercle" class="icon-of-burger icon">
         </button>
-        <span class="divide-line--first"></span>
-        <a href="#" class="header__logo-container logo">
-            <img src="./img/GroupLogo.svg" alt="CPS logo" class="CPS-group-logo">
-        </a>
+        
+        <div class="header__logo-container logo">
+            <a href="#" class="logo__link-logo">
+                <img src="./img/GroupLogo.svg" alt="CPS logo" class="CPS-group-logo">
+            </a>
+        </div>
+ 
         <!-- screen >= 768px -->
         <div class="header__screen-768-container">
             <button type="button" class="icon-768px header__button">
@@ -32,13 +35,13 @@
             </button>
         </div>
 
-        <!-- -->
-        <span class="divide-line--second"></span>
-        <button type="button" class=" header__button header_repair-icon">
+        <!-- <span class="divide-line--second"></span>-->
+        
+        <button type="button" class=" header__button header__repair-icon">
             <img src="./img/repairIcon.svg" alt="Repair icon" class="header__icon-repair icon">
         </button>
-        <button type="button" class="header_check-staus-icon header__button">
-            <img src="./img/checkstatusIcon.svg" alt="check status icon" class="header__icon-check-staus icon">
+        <button type="button" class="header__check-status-icon header__button">
+            <img src="./img/checkstatusIcon.svg" alt="check status icon" class="header__icon-check-status icon">
         </button>
 
     </header>
@@ -50,7 +53,7 @@
                 <div class="mobile-menu__left-section-header">
                     <button class="mobile-menu__close-button close-button">
                         <svg class="mobile-menu__close-icon" aria-hidden="true" focusable="false" width="32px"
-                            height="32px" viewBox="0 0 32 32">Cross mark</svg>
+                            height="32px" viewBox="0 0 32 32"></svg>
                         <span class="close-button__text">close button</span>
                     </button>
                     <a href="#" class="mobile-menu__logo-link">
@@ -91,18 +94,18 @@
         </nav>
             <footer class="mobile-menu__footer-mobile footer-mobile">
                 <div class="footer-mobile__icons-container">
-                    <button type="button" class="  icon-order-call--mobile">
+                    <button type="button" class="  footer-mobile__icon-order-call">
                         <img src="img/call-icon.svg" alt="Call icon" class=" icon-order-call icon">
                     </button>
-                    <button type="button" class=" icon-chat--mobile">
+                    <button type="button" class=" footer-mobile__icon-chat">
                         <img src="img/chat-icon.svg" alt="Chat icon" class=" icon-chat icon">
                     </button>
-                    <button type="button" class=" icon-profile--mobile">
+                    <button type="button" class=" footer-mobile__icon-profile">
                         <img src="img/profile-icon.svg" alt="profile icon" class=" icon-profile  icon">
                     </button>
                 </div>
-                <p class="footer-mobile__mail">mail@cps.com</p>
-                <p class="footer-mobile__tel">8 800 890 8900</p>
+                <a href="#" class="footer-mobile__mail">mail@cps.com</a>
+                <a href="#" class="footer-mobile__tel">8 800 890 8900</a>
                 <div class="footer-mobile__languages">
                     <a href="" class="footer-mobile__ru footer-mobile__ru--active">RU</a>
                     <a href="" class="footer-mobile__en">EN</a>
@@ -114,15 +117,15 @@
         <div class="feedback-form feedback-form-initial form-container">
             <button class="feedback-form__close-btn close-button">
                 <svg class="feedback-form__close-icon" aria-hidden="true" focusable="false" width="32px"
-                height="32px" viewBox="0 0 32 32">Cross mark</svg>
+                height="32px" viewBox="0 0 32 32"></svg>
             <span class="close-button__text">text</span>
             </button>
             <form class="feedback-form__form-self form" action="#" method="get">
-                <h2 class="feedback-form__title form-title">Обратная связь</h2>
+                <h3 class="feedback-form__title form-title">Обратная связь</h3>
                 <input type="text" name="userName" value="" placeholder="Имя" required>
                 <input type="tel" name="userTel" value="" placeholder="Телефон" required>
                 <input type="email" name="userMail" value="" placeholder="Электонная почта" required>
-                <textarea class="feedback-form__textarea textarea" name="massage" id="" cols="30" rows="6"
+                <textarea class="feedback-form__textarea textarea" name="massage" cols="30" rows="6"
                     placeholder="Сообщение" required></textarea>
                 <p class="feedback-form__text text-agreement">Нажимая “отправить”, вы даете согласие на <a href="#"
                         class="feedback-form__custom-link link-agreement">обработку персональных</a> данных и
@@ -135,13 +138,13 @@
         <!-- Order call form -->
         <div class="order-call order-call--initial form-container">
             <button class="order-call__close-btn  close-button">
-                <svg class="mobile-menu__close-icon" aria-hidden="true" focusable="false" width="32px"
-                height="32px" viewBox="0 0 32 32">Cross mark</svg>
+                <svg class="order-call__close-icon" aria-hidden="true" focusable="false" width="32px"
+                height="32px" viewBox="0 0 32 32"></svg>
             <span class="close-button__text">close button</span>
             </button>
             <form action="#" class="order-call__form form-call form" method="get">
-                <h2 class="form-call__title form-title">Заказать звонок</h2>
-                <input type="tel" name="userTel" id="" placeholder="Телефон" required>
+                <h3 class="form-call__title form-title">Заказать звонок</h3>
+                <input type="tel" name="userTel" placeholder="Телефон" required>
                 <p class="form-call__text text-agreement">Нажимая “отправить”, вы даете согласие на <a href="#"
                         class="form-call__custom-link link-agreement">обработку персональных</a> данных и соглашаетесь с
                     нашей <a href="#" class="form-call__custom-link link-agreement">политикой конфиденциальности</a></p>
@@ -152,19 +155,18 @@
         <!-- Main -->
         <main class="main">
             <section class="services">
-
                 <div class="services__tittle-container ">
                     <h1 class="services__tittle title">Услуги и сервисы</h1>
 
-                    <div class="services__icons-text--1120px">
+                    <div class="services__icons-text-1120px">
                         <p class="services__text ">Оставить заявку</p>
                         <img src="img/repairIcon.svg" alt="Repair icon" class="services__icon-repair icon">
                     </div>
 
-                    <div class="services__icons-text--1120px ">
+                    <div class="services__icons-text-1120px ">
                         <p class="services__text ">Статус ремонта</p>
                         <img src="img/checkstatusIcon.svg" alt="Repair icon"
-                            class="services__icon-check-staus icon">
+                            class="services__icon-check-status icon">
                     </div>
                 </div>
 
@@ -204,18 +206,18 @@
                             производителя., что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
                             что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и
                             близким.</span>
-                        <span class="text-1120px--more">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        <span class="text-1120px-more">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
                             производителя., что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
                             что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и
                             близким.</span>
                     </p>
-                    <div class="comment__read-more">
+                    <div class="comment__read-btns read-btns">
                         
-                        <button type="button" class="read-more__text">
+                        <button type="button" class="read-btns__text-more">
                             Читать далее
                         </button>
-                        <button type="button" class="read-less__text">
+                        <button type="button" class="read-btns__text-less">
                             Свернуть
                         </button>
                     </div>
@@ -226,89 +228,89 @@
             </section>
             <!-- Swiper + brends-->
             <div class="brends brends-container">
-                <h3 class="brends__title">Ремонт техники различных брендов</h3>
+                <h2 class="brends__title gradient-title">Ремонт техники различных брендов</h2>
 
                 <!-- Swiper  -->
-                <div class="brends__list--swiper swiper-container">
-                    <div class="brends__list--swiper-wripper swiper-wrapper">
+                <div class="brends-swiper__list brends-swiper swiper-container">
+                    <div class="brends-swiper__swiper-wripper swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/lenovo.png" alt="icon lenovo"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/ViewSonic.png" alt="icon ViewSonic"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/samsung.png" alt="icon samsung"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/apple.png" alt="icon apple"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/ViewSonic.png" alt="icon ViewSonic"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/bosch.png" alt="icon bosch"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
-                                <img src="img/hp.png" alt="icon hp" class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                            <div class="brends-swiper__item">
+                                <img src="img/hp.png" alt="icon hp" class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper ">
-                                <img src="img/acer.png" alt="icon acer" class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                            <div class="brends-swiper__item ">
+                                <img src="img/acer.png" alt="icon acer" class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
-                                <img src="img/sony.png" alt="icon sony" class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                            <div class="brends-swiper__item">
+                                <img src="img/sony.png" alt="icon sony" class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/lenovo.png" alt="icon lenovo"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/samsung.png" alt="icon samsung"
-                                    class="brends__icon--swiper">
-                                <button class="brends__button-item"></button>
+                                    class="brends-swiper__icon">
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends__item--swiper">
+                            <div class="brends-swiper__item">
                                 <img src="img/apple.png" alt="icon apple" class="brends__icon">
-                                <button class="brends__button-item"></button>
+                                <button class="brends-swiper__button"></button>
                             </div>
                         </div>
 
@@ -368,13 +370,12 @@
                     </div>
                 </div>
                 <div class="brends__buttons-container">
-
-                    <button type="button" class="brends__button--more">Показать еще</button>
-                    <button type="button" class="brends__button--less">Скрыть</button>
+                    <button type="button" class="brends__button-more">Показать еще</button>
+                    <button type="button" class="brends__button-less">Скрыть</button>
                 </div>
             </div>
             <section class="repair">
-                <h2 class="repair__title">Ремонт различных видов техники</h2>
+                <h2 class="repair__title gradient-title">Ремонт различных видов техники</h2>
                 <div class="repair__container swiper-container">
                     <div class="repair__list swiper-wrapper">
                         <div class="swiper-slide">
@@ -406,14 +407,14 @@
                 </div>
 
                 <div class="repair__buttons-container">
-                    <button type="button" class="repair__btn--more">Показать еще</button>
-                    <button type="button" class="repair__btn--less">Скрыть</button>
+                    <button type="button" class="repair__btn-more">Показать еще</button>
+                    <button type="button" class="repair__btn-less">Скрыть</button>
                 </div>
 
             </section>
 
             <section class="prices">
-                <p class="prices__title">Цены на услуги</p>
+                <h2 class="prices__title gradient-title">Цены на услуги</h2>
                 <div class="prices__list">
                     <div class="prices__item prices__item--discription">
                         <p class="prices__name">Ремонтные услуги</p>
@@ -478,120 +479,119 @@
                 </div>
                 <!-- prices swiper -->
             </section>
-            <section class="price-swiper">
-                <h2 class="prices__title-swiper">Цены на услуги</h2>
-                <div class="prices__list-swiper swiper-container">
+            <section class="prices-swiper">
+                <h2 class="prices-swiper__title gradient-title">Цены на услуги</h2>
+                <div class="prices-swiper__list swiper-container">
                     <div class="swiper-wrapper">                 
-                            <div class="prices__item-swiper swiper-slide">
-                                <div class="prices_item-top">                                
-                                    <p class="prices__name-swiper">Ремонтные услуги</p>
-                                    <p class="prices__name-swiper--text">Диагностика</p>
+                            <div class="prices-swiper__item swiper-slide">
+                                <div class="prices-swiper__item-top">                                
+                                    <p class="prices-swiper__name">Ремонтные услуги</p>
+                                    <p class="prices-swiper__name-text">Диагностика</p>
                                 </div>
-                                <div class="prices__info-swiper">
-                                    <div class="prices__info-left-swiper">
-                                        <div class="prices__info-left-swiper-first">                            
-                                            <p class="prices__price-swiper">Цена</p>
-                                            <p class="prices__price-swiper--text">Бесплатно</p>
+                                <div class="prices-swiper__info">
+                                    <div class="prices-swiper__info-left">
+                                        <div class="prices-swiper__info-left-first">                            
+                                            <p class="prices-swiper__price">Цена</p>
+                                            <p class="prices-swiper__price-text">Бесплатно</p>
                                         </div>
-                                        <div class="prices__info-left-swiper-second">
-                                            <p class="prices__working-time-swiper">Срок</p>
-                                            <p class="prices__working-time-swiper--text">30 мин</p>
+                                        <div class="prices-swiper__info-left-second">
+                                            <p class="prices-swiper__working-time">Срок</p>
+                                            <p class="prices-swiper__working-text">30 мин</p>
                                         </div>
                                     </div>
-                                    <div class="prices__info-right-swiper">
-                                        <button type="button" class="prices__btn-order-swiper" >Заказать</button>
+                                    <div class="prices-swiper__info-right">
+                                        <button type="button" class="prices-swiper__btn-order" >Заказать</button>
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div class="prices__item-swiper swiper-slide">
-                                <div class="prices_item-top">                                
-                                    <p class="prices__name-swiper">Ремонтные услуги</p>
-                                    <p class="prices__name-swiper--text">Замена дисплея</p>
+                            <div class="prices-swiper__item swiper-slide">
+                                <div class="prices-swiper__item-top">                                
+                                    <p class="prices-swiper__name">Ремонтные услуги</p>
+                                    <p class="prices-swiper__name-text">Замена дисплея</p>
                                 </div>
-                                <div class="prices__info-swiper">
-                                    <div class="prices__info-left-swiper">
-                                        <div class="prices__info-left-swiper-first">                            
-                                            <p class="prices__price-swiper">Цена</p>
-                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                <div class="prices-swiper__info">
+                                    <div class="prices-swiper__info-left">
+                                        <div class="prices-swiper__info-left-first">                            
+                                            <p class="prices-swiper__price">Цена</p>
+                                            <p class="prices-swiper__price-text">1 000 ₽</p>
                                         </div>
-                                        <div class="prices__info-left-swiper-second">
-                                            <p class="prices__working-time-swiper">Срок</p>
-                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        <div class="prices-swiper__info-left-second">
+                                            <p class="prices-swiper__working-time">Срок</p>
+                                            <p class="prices-swiper__working-text">30-120 мин</p>
                                         </div>
                                     </div>
-                                    <div class="prices__info-right-swiper">
-                                        <button type="button" class="prices__btn-order-swiper">Заказать</button>
-                                    </div>
-                                </div>
-
-                            </div> 
-
-                            <div class="prices__item-swiper swiper-slide">
-                                <div class="prices_item-top">                                
-                                    <p class="prices__name-swiper">Ремонтные услуги</p>
-                                    <p class="prices__name-swiper--text">Замена полифонического динамика</p>
-                                </div>
-                                <div class="prices__info-swiper">
-                                    <div class="prices__info-left-swiper">
-                                        <div class="prices__info-left-swiper-first">                            
-                                            <p class="prices__price-swiper">Цена</p>
-                                            <p class="prices__price-swiper--text">1 000 ₽</p>
-                                        </div>
-                                        <div class="prices__info-left-swiper-second">
-                                            <p class="prices__working-time-swiper">Срок</p>
-                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
-                                        </div>
-                                    </div>
-                                    <div class="prices__info-right-swiper">
-                                        <button type="button" class="prices__btn-order-swiper">Заказать</button>
+                                    <div class="prices-swiper__info-right">
+                                        <button type="button" class="prices-swiper__btn-order">Заказать</button>
                                     </div>
                                 </div>
 
                             </div> 
 
-                            <div class="prices__item-swiper swiper-slide">
-                                <div class="prices_item-top">                                
-                                    <p class="prices__name-swiper">Ремонтные услуги</p>
-                                    <p class="prices__name-swiper--text">Тестирование с выдачей технического заключения</p>
+                            <div class="prices-swiper__item swiper-slide">
+                                <div class="prices-swiper__item-top">                                
+                                    <p class="prices-swiper__name">Ремонтные услуги</p>
+                                    <p class="prices-swiper__name-text">Замена полифонического динамика</p>
                                 </div>
-                                <div class="prices__info-swiper">
-                                    <div class="prices__info-left-swiper">
-                                        <div class="prices__info-left-swiper-first">                            
-                                            <p class="prices__price-swiper">Цена</p>
-                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                <div class="prices-swiper__info">
+                                    <div class="prices-swiper__info-left">
+                                        <div class="prices-swiper__info-left-first">                            
+                                            <p class="prices-swiper__price">Цена</p>
+                                            <p class="prices-swiper__price-text">1 000 ₽</p>
                                         </div>
-                                        <div class="prices__info-left-swiper-second">
-                                            <p class="prices__working-time-swiper">Срок</p>
-                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        <div class="prices-swiper__info-left-second">
+                                            <p class="prices-swiper__working-time">Срок</p>
+                                            <p class="prices-swiper__working-text">30-120 мин</p>
                                         </div>
                                     </div>
-                                    <div class="prices__info-right-swiper">
-                                        <button type="button" class="perices__btn-order-swiper">Заказать</button>
+                                    <div class="prices-swiper__info-right">
+                                        <button type="button" class="prices-swiper__btn-order">Заказать</button>
                                     </div>
                                 </div>
 
                             </div> 
 
-                            <div class="prices__item-swiper swiper-slide">
-                                <div class="prices_item-top">                                
-                                    <p class="prices__name-swiper">Ремонтные услуги</p>
-                                    <p class="prices__name-swiper--text">Замена программного обеспечения</p>
+                            <div class="prices-swiper__item swiper-slide">
+                                <div class="prices-swiper__item-top">                                
+                                    <p class="prices-swiper__name">Ремонтные услуги</p>
+                                    <p class="prices-swiper__name-text">Тестирование с выдачей технического заключения</p>
                                 </div>
-                                <div class="prices__info-swiper">
-                                    <div class="prices__info-left-swiper">
-                                        <div class="prices__info-left-swiper-first">                            
-                                            <p class="prices__price-swiper">Цена</p>
-                                            <p class="prices__price-swiper--text">1 000 ₽</p>
+                                <div class="prices-swiper__info">
+                                    <div class="prices-swiper__info-left">
+                                        <div class="prices-swiper__info-left-first">                            
+                                            <p class="prices-swiper__price">Цена</p>
+                                            <p class="prices-swiper__price-text">1 000 ₽</p>
                                         </div>
-                                        <div class="prices__info-left-swiper-second">
-                                            <p class="prices__working-time-swiper">Срок</p>
-                                            <p class="prices__working-time-swiper--text">30-120 мин</p>
+                                        <div class="prices-swiper__info-left-second">
+                                            <p class="prices-swiper__working-time">Срок</p>
+                                            <p class="prices-swiper__working-text">30-120 мин</p>
                                         </div>
                                     </div>
-                                    <div class="prices__info-right-swiper">
-                                        <button type="button" class="prices__btn-order-swiper">Заказать</button>
+                                    <div class="prices-swiper__info-right">
+                                        <button type="button" class="prices-swiper__btn-order">Заказать</button>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="prices-swiper__item swiper-slide">
+                                <div class="prices-swiper__item-top">                                
+                                    <p class="prices-swiper__name">Ремонтные услуги</p>
+                                    <p class="prices-swiper__name-text">Замена программного обеспечения</p>
+                                </div>
+                                <div class="prices-swiper__info">
+                                    <div class="prices-swiper__info-left">
+                                        <div class="prices-swiper__info-left-first">                            
+                                            <p class="prices-swiper__price">Цена</p>
+                                            <p class="prices-swiper__price-text">1 000 ₽</p>
+                                        </div>
+                                        <div class="prices-swiper__info-left-second">
+                                            <p class="prices-swiper__working-time">Срок</p>
+                                            <p class="prices-swiper__working-text">30-120 мин</p>
+                                        </div>
+                                    </div>
+                                    <div class="prices-swiper__info-right">
+                                        <button type="button" class="prices-swiper__btn-order">Заказать</button>
                                     </div>
                                 </div>
 
@@ -599,11 +599,11 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="prices__post-info">
-                    <p class="prices__promo-agreement">Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                <div class="prices__post-info prices-post-info">
+                    <p class="prices-post-info__promo-agreement">Все цены указаны с учетом НДС. Стоимость ремонта указана на
                         единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте
                         заявку.</p>
-                    <button type="button" class="prices__btn-get-offer">Получить коммерческое предложение</button>
+                    <button type="button" class="prices-post-info__btn-get-offer">Получить коммерческое предложение</button>
                 </div>
             </section>
         </main>

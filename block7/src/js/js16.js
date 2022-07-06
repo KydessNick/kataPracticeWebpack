@@ -3,8 +3,8 @@
 export let btnMenu                 =   document.querySelector('.header__burger-button');
 export let mobileMenu              =   document.querySelector('.mobile-menu');
 export let mobileMenuCloseButton   =   document.querySelector('.mobile-menu__close-button');
-export let trubkaMobileMenu        =   document.querySelector('.icon-order-call--mobile');
-export let chatMobileMenu          =   document.querySelector('.icon-chat--mobile');
+export let trubkaMobileMenu        =   document.querySelector('.footer-mobile__icon-order-call');
+export let chatMobileMenu          =   document.querySelector('.footer-mobile__icon-chat');
 export let mobileMenuAnimation     =   document.querySelector('.mobile-menu--initial');
 
 //  blur
@@ -26,22 +26,22 @@ export let orderCallForm           =   document.querySelector('.order-call');
 export let orderCallAnimation      =   document.querySelector('.order-call--initial');
 
 // read more text
-export let readMoreBtn             = document.querySelector('.read-more__text')
-export let readLessBtn             = document.querySelector('.read-less__text')
+export let readMoreBtn             = document.querySelector('.read-btns__text-more')
+export let readLessBtn             = document.querySelector('.read-btns__text-less')
 export let text768                 = document.querySelector('.text-768px')
 export let text1120                = document.querySelector('.text-1120px')
-export let text1120More            = document.querySelector('.text-1120px--more')
+export let text1120More            = document.querySelector('.text-1120px-more')
 
 // brends list
 export const windowWidth           = document.documentElement.clientWidth;
 export let brendParent             = document.querySelector('.brends__list');
 export let brendChildren           = brendParent.querySelectorAll('.brends__item');
-export let btnShowMoreBrends       = document.querySelector('.brends__button--more');
-export let btnShowLessBrends       = document.querySelector('.brends__button--less');
+export let btnShowMoreBrends       = document.querySelector('.brends__button-more');
+export let btnShowLessBrends       = document.querySelector('.brends__button-less');
 
 // repair list
-export let btnShowMoreRepair       = document.querySelector('.repair__btn--more');
-export let btnShowLessRepair       = document.querySelector('.repair__btn--less');
+export let btnShowMoreRepair       = document.querySelector('.repair__btn-more');
+export let btnShowLessRepair       = document.querySelector('.repair__btn-less');
 export let repairChildren          = document.querySelectorAll('.repair__item');
 
 //blur
@@ -185,7 +185,7 @@ function brendsELementCheck(){
             console.log(brendChildren[i].style)
         } 
     } else if(windowWidth >1439){
-        for(let i = 0; i < 10; i++){
+        for(let i = 0; i < 8; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
     }
@@ -220,26 +220,45 @@ btnShowLessBrends.addEventListener('click', function(){
 });
 //repair section
 function reapairELementCheck(){
-    if(windowWidth > 910 && windowWidth < 1506){
+    if(windowWidth > 767 && windowWidth < 835){
         for(let i = 0; i < 3; i++){
             repairChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
         } 
 
+    } else if(windowWidth>834 && windowWidth < 1005){
+        for(let i = 0; i < 4; i++){
+            repairChildren[i].style.display = 'flex';
+            console.log(brendChildren[i].style)
+        } 
+    }else if(windowWidth>1004 ){
+        for(let i = 0; i < 4; i++){
+            repairChildren[i].style.display = 'flex';
+            console.log(brendChildren[i].style)
+        }
     }
 }
 console.log(  repairChildren)
 btnShowMoreRepair.addEventListener('click', function(){
-    for(let i = 0; i < repairChildren.length; i++)
+    for(let i = 0; i < repairChildren.length; i++){
         repairChildren[i].style.display = 'flex'; 
+    }
+       
         btnShowMoreRepair.style.display='none'
         btnShowLessRepair.style.display='block'
         
 }
 )
 btnShowLessRepair.addEventListener('click', function(){
-    for(let i=3; i < repairChildren.length; i++)
-        repairChildren[i].style.display = 'none'; 
+    if(windowWidth > 767 && windowWidth < 835){
+        for(let i=3; i < repairChildren.length; i++){
+            repairChildren[i].style.display = 'none'; 
+        }
+    } else if(windowWidth > 834){
+        for(let i=4; i < repairChildren.length; i++){
+            repairChildren[i].style.display = 'none'; 
+        }
+    }
         btnShowMoreRepair.style.display='block'
         btnShowLessRepair.style.display='none'
 }

@@ -7,7 +7,7 @@
     .prices {
         display: flex;
         flex-direction: column;
-        margin: 2rem 1rem 5rem 2rem;
+        margin: 25px 1rem 5rem 25px;
     }
     
     .prices__title {
@@ -17,6 +17,8 @@
         font-size: 24px;
         color: #7E7E82;
         margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
     }
     
     .prices__list {
@@ -113,7 +115,7 @@
         position: absolute;
         
     }
-    .price-swiper{
+    .prices-swiper{
         display: none;
     }
     }
@@ -122,24 +124,26 @@
         .prices{
             display: none;
         }
-        .price-swiper{
+        .prices-swiper{
             margin: 2rem 1rem 0 2rem;
         }
-        .prices__title-swiper{
+        .prices-swiper__title{
             color: #7E7E82;
             font-weight: 400;
+            position: relative;
+            z-index: 2;
         }
-        .prices__list-swiper{
+        .prices-swiper__list{
             
             position: relative;
         }
-        .prices__item-swiper.swiper-slide {
+        .prices-swiper__item.swiper-slide {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 260px;
+            width: 240px;
         }
-        .prices__item-swiper {
+        .prices-swiper__item {
             display: flex;
             flex-direction: column;
             width: 260px;
@@ -148,56 +152,57 @@
             margin: 1rem 0 1rem 0;
             padding: 1rem;
         }
-        .prices_item-top{
+        .prices-swiper__item-top{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             margin: 0 0 1.5rem 0;
         }
-        .prices__name-swiper {
+        .prices-swiper__name {
             color: #7E7E82;
         }
-        .prices__name-swiper--text{
+        .prices-swiper__name-text{
            
         }
-        .prices__info-swiper {
+        .prices-swiper__info {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
-        .prices__info-left-swiper {
+        .prices-swipers__info-left {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-between;
             flex: 1 1 50%;
         }
-        .prices__info-left-swiper-first{
+        .prices-swiper__info-left-first{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             margin: 0 0 1.5rem 0;
         }
-        .prices__info-left-swiper-second{
+        .prices-swiper__info-left-second{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             margin: 0 0 0 0;
         }
-        .prices__price-swiper {
+        .prices-swiper__price {
             color: #7E7E82;
         }
-        .prices__working-time-swiper {
+        .prices-swiper__working-time {
             color: #7E7E82;
         }
-        .prices__info-right-swiper {
+        .prices-swiper__info-right {
             display: flex;
+            justify-content: flex-end;
         }
        
-        .prices__btn-order-swiper {
+        .prices-swiper__btn-order {
             position: relative;
             font-weight: 800;
             margin: 0 0 0 0;
-            justify-content: center;
             align-self: flex-end;
             width: 120px;
             background-color: #FF3E79;
@@ -208,7 +213,7 @@
             font-size: 12px;
             text-align: left;
         }
-        .prices__btn-order-swiper::after{
+        .prices-swiper__btn-order::after{
             content: url(../img/dropdown.svg);
             position: absolute;
             right:14px;
@@ -218,17 +223,17 @@
             margin: 2rem 0 0 0rem;
             text-align: left;
         }
-        .prices__promo-agreement{
+        .prices-post-info__promo-agreement{
             margin: 0 0 1rem 0;
 
         }
-        .prices__btn-get-offer{
+        .prices-post-info__btn-get-offer{
             position: relative;
             font-size: 16px;
             font-weight: 800;
             color: #1B1C21;
         }
-        .prices__btn-get-offer::after {
+        .prices-post-info__btn-get-offer::after {
             content:url(../img/Line.svg);
             right: -0.9rem;
             bottom: 0;

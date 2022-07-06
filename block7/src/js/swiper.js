@@ -13,19 +13,19 @@ const repairSwiper = new Swiper('.repair__container', {
         clickable: true,
     },
     breakpoints:{
-        912:{
+        768:{
             enabled: false
         }
     },
     slidesPerView: 'auto' ,
-    spaceBetween: 35,
+    spaceBetween: 16,
     watchOverFlow: true,
 })
 
-const pricesSwiper = new Swiper('.prices__list-swiper', {
+const pricesSwiper = new Swiper('.prices-swiper__list', {
     enabled: true,
     breakpoints:{
-        767:{
+        768:{
             enabled: false
         }
     },
@@ -35,22 +35,27 @@ const pricesSwiper = new Swiper('.prices__list-swiper', {
         clickable: true,
     },
     slidesPerView: 'auto',
-    spaceBetween: 35,
+    spaceBetween: 16,
     watchOverFlow: true,
 })
     const servisecSwiper = new Swiper('.services__container', {
                 slidesPerView:'auto',
-                spaceBetween: 35,
+                spaceBetween: 16,
                 watchOverFlow: true,
+                breakpoints:{
+                    1117:{
+                        enabled: false
+                    }
+                },
             })
-            const brendsSwipee = new Swiper('.brends__list--swiper', {
+            const brendsSwiper = new Swiper('.brends-swiper__list', {
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
                     clickable: true,
                 },
                 slidesPerView: 'auto' ,
-                spaceBetween: 35,
+                spaceBetween: 16,
                 watchOverFlow: true,
             })
 
