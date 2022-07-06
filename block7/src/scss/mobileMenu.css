@@ -12,11 +12,12 @@
 	padding: 1rem 1.5rem 2rem 1.5rem;
 	opacity: 1;
 	width: 320px;
-	height: 100vh;
+	height: 100%;
 	z-index: 10;
 	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
 	font-family: 'TT Lakes';
 	font-size: 16;
+	z-index: 100;
 }
 
 @media (min-width:1439.98px) {

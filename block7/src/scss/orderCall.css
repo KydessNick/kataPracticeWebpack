@@ -4,11 +4,12 @@
 	display: flex;
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
 	position: absolute;
+	z-index: 100;
 }
 
 @media (max-width:1439.98px) {
 	.order-call--initial {
-		right: -342px;
+		right: -382px;
 		transform: translateX(0px);
 	}
 }

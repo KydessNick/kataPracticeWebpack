@@ -3,12 +3,13 @@
 
 .feedback-form {
 	box-shadow: -16px 0 52px 0 rgba(14, 24, 80, 0.2);
+	z-index: 100;
 }
 
 @media (max-width:1439.98px) {
 	.feedback-form-initial{
 		display: flex;
-		right: -342px;
+		right: -382px;
 		transform: translateX(0px);
 	}
 	

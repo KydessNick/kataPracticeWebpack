@@ -66,7 +66,7 @@ trubkaMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
         mobileMenuAnimation.style.transform  ='translateX(-322px)';
 
-        orderCallAnimation.style.transform  ='translateX(-322px)';
+        orderCallAnimation.style.transform  ='translateX(-382px)';
         orderCallAnimation.style.transition ='ease-in-out 0.7s';
     } else if(windowWidth> 1439){
         
@@ -82,7 +82,7 @@ chatMobileMenu.addEventListener('click', function(){
     if(windowWidth <1440){
     mobileMenuAnimation.style.transform  ='translateX(-322px)';
 
-    feedbackFormAnimation.style.transform  ='translateX(-322px)';
+    feedbackFormAnimation.style.transform  ='translateX(-382px)';
     feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
     } else if(windowWidth >1439){
         
@@ -95,7 +95,7 @@ chatMobileMenu.addEventListener('click', function(){
 // feedback form
 chat.addEventListener('click', function(){
     if(windowWidth<1440){
-        feedbackFormAnimation.style.transform  ='translateX(-342px)';
+        feedbackFormAnimation.style.transform  ='translateX(-382px)';
         feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
 
     }else if(windowWidth>1439){
@@ -107,7 +107,7 @@ chat.addEventListener('click', function(){
 } )
 feedbackFormCloseBtn.addEventListener('click', function(){
     if(windowWidth<1440){
-        feedbackFormAnimation.style.transform  ='translateX(342px)';
+        feedbackFormAnimation.style.transform  ='translateX(382px)';
         feedbackFormAnimation.style.transition ='ease-in-out 0.7s';
     }else if(windowWidth > 1439){
         feedbackFormAnimation.style.transform  ='translateX(400px)';
@@ -120,7 +120,7 @@ feedbackFormCloseBtn.addEventListener('click', function(){
 //oreder call form
 trubka.addEventListener('click', function(){
     if(windowWidth<1440){
-        orderCallAnimation.style.transform  ='translateX(-342px)';
+        orderCallAnimation.style.transform  ='translateX(-382px)';
         orderCallAnimation.style.transition ='ease-in-out 0.7s';
     } else if( windowWidth >1439){
         orderCallAnimation.style.transform  ='translateX(-400px)';
@@ -132,7 +132,7 @@ trubka.addEventListener('click', function(){
 } )
 orderCallFormCloseBtn.addEventListener('click', function(){
     if( windowWidth < 1440){
-        orderCallAnimation.style.transform  ='translateX(342px)';
+        orderCallAnimation.style.transform  ='translateX(382px)';
         orderCallAnimation.style.transition ='ease-in-out 0.7s';
     }else if( windowWidth >1439){
         orderCallAnimation.style.transform  ='translateX(400px)';
