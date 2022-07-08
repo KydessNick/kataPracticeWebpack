@@ -71,12 +71,12 @@
 
 
 /*========      SWIPER   BRENDS  ===============*/
-.brends-swiper__list {
+.brends__swiper-list {
 	display: none;
 }
 
 @media (max-width: 767.97px) {
-	.brends-swiper__list {
+	.brends__swiper-list {
 		position: relative;
 		display: flex;
 		flex-direction: row;
@@ -156,6 +156,7 @@
 	height: 40px;
 	text-decoration: none;
 	text-align: center;
+	display: block;
 }
 
 .btn-swiper {
@@ -208,6 +209,13 @@
 	left: -2rem;
 }
 
+/*  animation btn   */
+.brends-swiper__item .brends-swiper__button:hover{
+	transition:all 1.5s;
+	transform: rotate(360deg);
+	transform: scale(1);
+}
+
 /*==================section==================*/
 
 .comment {
@@ -242,32 +250,35 @@
 }
 
 .comment__promo-text {
+	display: inline-block;
 	line-height: 18px;
 	color: #1B1C21;
 }
 
 .text-768px {
 	display: none;
+	margin: 1rem 0 0 0;
 }
 
 @media (min-width:767.97px) {
 	.text-768px {
-		display: block;
-		margin: 20px 0 0 0;
+		display: inline-block;
 	}
 }
 
 .text-1120px {
 	display: none;
+	
 }
 
 @media (min-width:1119.97px) {
 	.text-1120px {
-		display: block;
+		display: inline;
 	}
 }
 .text-1120px-more{
 	display: none ;
+	margin-top: 1rem;
 }
 
 
@@ -307,6 +318,24 @@ display: inherit;
 	left: -1rem;
 	top: 0;
 	display: inherit;
+	}
+
+.read-btns__text-anim::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0;
+	max-width: 0;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	color: #1B1C21;
+	content: attr(data-hover);
+	transition: max-width 0.5s;
+	white-space: nowrap;
+	}
+	.read-btns__text-anim:hover::after,
+	.read-btns__text-anim:focus::after{
+		max-width: 100%;
 	}
 
 /*==Picture=*/
@@ -673,7 +702,7 @@ input,
 	height: 100%;
 	z-index: 10;
 	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-	font-family: 'TT Lakes';
+	font-family:  'TTLakes',sans-serif;
 	font-size: 16;
 	z-index: 100;
 }
@@ -691,6 +720,7 @@ input,
 @media (max-width:1439.97px) {
 	.mobile-menu {
 		top: 0;
+		left: 0;
 	}
 }
 
@@ -757,6 +787,7 @@ input,
 /*=======mobile menu list====================*/
 .mobile-menu__nav{
 	flex: 1 1 auto;
+	
 }
 .mobile-menu__nav-list {
 	
@@ -784,7 +815,7 @@ input,
 	height: 32px;
 	width: 25px;
 	background: #41F6D7;
-	border: 1px solid #000000;
+	
 	border-radius: 25%;
 	left: -46px;
 	top: -8px;
@@ -810,13 +841,36 @@ input,
 	transform: scale(1.1);
 }
 
+
 .footer-mobile__mail {
 	font-size: 18px;
 	color: #1B1C21;
 	letter-spacing: -0.2px;
+	position: relative;
+}
+.footer-mobile__mail::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0;
+	max-width: 0;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	color: #41f6d8b3;
+	content: attr(data-hover);
+	transition: max-width 0.5s;
+	white-space: nowrap;
+}
+.footer-mobile__mail:hover::before,
+.footer-mobile__mail:focus::before{
+	max-width: 100%;
 }
 
+
+
 .footer-mobile__tel {
+	position: relative;
+	display: inline-block;
 	font-weight: 600;
 	font-size: 24px;
 	letter-spacing: -0.6px;
@@ -824,6 +878,24 @@ input,
 	margin: 1rem 0 3rem 0;
 	align-self: flex-start;
 }
+.footer-mobile__tel::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0;
+	max-width: 0;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	color: #41f6d8b3;
+	content: attr(data-hover);
+	transition: max-width 0.5s;
+	white-space: nowrap;
+}
+.footer-mobile__tel:hover::before,
+.footer-mobile__tel:focus::before{
+	max-width: 100%;
+}
+
 
 .footer-mobile__languages {
 	display: flex;
@@ -895,7 +967,7 @@ input,
     }
     
     
-    .prices__item::after {
+    .prices__item:not(:first-child)::after {
         content: "";
         bottom: 0;
         position: absolute;
@@ -906,9 +978,10 @@ input,
     
     .prices__name {
         flex: 1 0 50%;
-    
+        text-align: start;
     }
-    
+ 
+
     .prices__info {
         flex: 1 1 50%;
         display: flex;
@@ -922,29 +995,62 @@ input,
     .prices__working-time {}
     
     .prices__btn-order {
+        display: block;
         position: relative;
         justify-content: center;
         align-self: flex-end;
         width: 120px;
+        height: 28px;
         background-color: #FF3E79;
         border-radius: 20px;
-        padding: 0.5rem;
+        text-align: start;
         color: white;
         text-transform: uppercase;
         font-size: 12px;
+        padding-left: 1rem;
+        transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
     }
     .prices__btn-order::after{
         content: url(./static/dropdown.svg);
         position: absolute;
         right:14px;
-        bottom: 7px;
+        bottom: 5px;
+    }
+    .prices__btn-order::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden;
+        padding: 0 0;
+        width:0px;
+        max-width: 0;
+        background-color: #4144f6b3;
+        content: '';
+        transition:all  0.5s;
+        white-space: nowrap;
+        z-index: -1;
+        transition: all 0.4s;
+    }   
+    .prices__btn-order:hover{
+        background-color: #2fa994;
+    }
+    .prices__btn-order:hover::before,
+    .prices__btn-order:focus:before{
+        left: 0%;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
     }
     
     .prices__btn-order--discription {
+        width: 120px;
+        height: 28px;
         background-color: inherit;
     }
-    
-    .prices__post-info {
+   
+    .prices-swiper__post-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -953,7 +1059,7 @@ input,
     
     .prices__promo-agreement {
         width: 50%;
-        
+        margin-top: 2rem;
     }
     
     .prices__btn-get-offer {
@@ -963,7 +1069,7 @@ input,
         background-color: inherit;
     }
     
-    .prices__btn-get-offer::after {
+    .prices__btn-get-offer::before {
         content:url(./static/Line.svg);
         right: -0.9rem;
         bottom: 0;
@@ -1068,13 +1174,13 @@ input,
             font-size: 12px;
             text-align: left;
         }
-        .prices-swiper__btn-order::after{
+        .prices-swiper__btn-order::before{
             content: url(./static/dropdown.svg);
             position: absolute;
             right:14px;
             bottom: 7px;
         }
-        .prices__post-info{
+        .prices-swiper__post-info{
             margin: 2rem 0 0 0rem;
             text-align: left;
         }
@@ -1088,9 +1194,11 @@ input,
             font-weight: 800;
             color: #1B1C21;
         }
-        .prices-post-info__btn-get-offer::after {
+        .prices-post-info__btn-get-offer::before {
             content:url(./static/Line.svg);
-            right: -0.9rem;
+            width: 12px;
+            height: 9px;
+            right: -1rem;
             bottom: 0;
             position: absolute;
             
@@ -1195,11 +1303,8 @@ input,
 }
 @media (min-width:1215px) {
 	.repair__item {
-		display: flex;
+		display: none;
 	}
-	.repair__item:last-child{
-		display: flex;
-		}
 }
 @media (min-width:1439.98px) {
 	.repair__item {
@@ -1323,7 +1428,7 @@ h1::before {
 	height: 45px;
 	width: 25px;
 	background: #41F6D7;
-	border: 1px solid #000000;
+	
 	border-radius: 25%;
 	left: -36px;
 }
@@ -1526,6 +1631,13 @@ $sub-titile: #7E7E82;
 	font-weight: 800;
 	src: url(./fonts/TTLakesCompressed-Bold.ttf) format("ttf");
 	src: url(./fonts/TTLakesCompressed-Bold.woff) format("woff");
+}
+@font-face {
+	font-family: 'TT Lakes Compressed Medium';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./fonts/TTLakesCompressed-Medium.ttf) format("ttf");
+	src: url(./fonts/TTLakesCompressed-Medium.woff) format("woff");
 }
 
 
@@ -1823,6 +1935,13 @@ animation: move 2s infinite ease-in-out;
   font-weight: 800;
   src: url(./fonts/TTLakesCompressed-Bold.ttf) format("ttf");
   src: url(./fonts/TTLakesCompressed-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: 'TT Lakes Compressed Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/TTLakesCompressed-Medium.ttf) format("ttf");
+  src: url(./fonts/TTLakesCompressed-Medium.woff) format("woff"); }
 
 body {
   padding: 0rem;
