@@ -97,11 +97,8 @@
 }
 @media (min-width:1215px) {
 	.repair__item {
-		display: flex;
+		display: none;
 	}
-	.repair__item:last-child{
-		display: flex;
-		}
 }
 @media (min-width:1439.98px) {
 	.repair__item {

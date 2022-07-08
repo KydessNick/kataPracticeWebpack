@@ -143,8 +143,8 @@ orderCallFormCloseBtn.addEventListener('click', function(){
 
 //read more
 readMoreBtn.addEventListener('click', function(){
-    text768.style.display     = 'block';
-    text1120.style.display    = 'block' ;
+    text768.style.display     = 'inline-block';
+    text1120.style.display    = 'inline' ;
     readMoreBtn.style.display = 'none';
     readLessBtn.style.display = 'block';
     text1120More.style.display ='block';

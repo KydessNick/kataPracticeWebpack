@@ -48,7 +48,7 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
                     }
                 },
             })
-            const brendsSwiper = new Swiper('.brends-swiper__list', {
+            const brendsSwiper = new Swiper('.brends__swiper-list', {
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',

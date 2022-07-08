@@ -40,7 +40,7 @@
     }
     
     
-    .prices__item::after {
+    .prices__item:not(:first-child)::after {
         content: "";
         bottom: 0;
         position: absolute;
@@ -51,9 +51,10 @@
     
     .prices__name {
         flex: 1 0 50%;
-    
+        text-align: start;
     }
-    
+ 
+
     .prices__info {
         flex: 1 1 50%;
         display: flex;
@@ -67,29 +68,62 @@
     .prices__working-time {}
     
     .prices__btn-order {
+        display: block;
         position: relative;
         justify-content: center;
         align-self: flex-end;
         width: 120px;
+        height: 28px;
         background-color: #FF3E79;
         border-radius: 20px;
-        padding: 0.5rem;
+        text-align: start;
         color: white;
         text-transform: uppercase;
         font-size: 12px;
+        padding-left: 1rem;
+        transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
     }
     .prices__btn-order::after{
         content: url(../img/dropdown.svg);
         position: absolute;
         right:14px;
-        bottom: 7px;
+        bottom: 5px;
+    }
+    .prices__btn-order::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden;
+        padding: 0 0;
+        width:0px;
+        max-width: 0;
+        background-color: #4144f6b3;
+        content: '';
+        transition:all  0.5s;
+        white-space: nowrap;
+        z-index: -1;
+        transition: all 0.4s;
+    }   
+    .prices__btn-order:hover{
+        background-color: #2fa994;
+    }
+    .prices__btn-order:hover::before,
+    .prices__btn-order:focus:before{
+        left: 0%;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
     }
     
     .prices__btn-order--discription {
+        width: 120px;
+        height: 28px;
         background-color: inherit;
     }
-    
-    .prices__post-info {
+   
+    .prices-swiper__post-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -98,7 +132,7 @@
     
     .prices__promo-agreement {
         width: 50%;
-        
+        margin-top: 2rem;
     }
     
     .prices__btn-get-offer {
@@ -108,7 +142,7 @@
         background-color: inherit;
     }
     
-    .prices__btn-get-offer::after {
+    .prices__btn-get-offer::before {
         content:url(../img/Line.svg);
         right: -0.9rem;
         bottom: 0;
@@ -213,13 +247,13 @@
             font-size: 12px;
             text-align: left;
         }
-        .prices-swiper__btn-order::after{
+        .prices-swiper__btn-order::before{
             content: url(../img/dropdown.svg);
             position: absolute;
             right:14px;
             bottom: 7px;
         }
-        .prices__post-info{
+        .prices-swiper__post-info{
             margin: 2rem 0 0 0rem;
             text-align: left;
         }
@@ -233,9 +267,11 @@
             font-weight: 800;
             color: #1B1C21;
         }
-        .prices-post-info__btn-get-offer::after {
+        .prices-post-info__btn-get-offer::before {
             content:url(../img/Line.svg);
-            right: -0.9rem;
+            width: 12px;
+            height: 9px;
+            right: -1rem;
             bottom: 0;
             position: absolute;
             

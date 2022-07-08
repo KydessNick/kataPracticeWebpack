@@ -15,7 +15,7 @@
 	height: 100%;
 	z-index: 10;
 	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
-	font-family: 'TT Lakes';
+	font-family:  'TTLakes',sans-serif;
 	font-size: 16;
 	z-index: 100;
 }
@@ -33,6 +33,7 @@
 @media (max-width:1439.97px) {
 	.mobile-menu {
 		top: 0;
+		left: 0;
 	}
 }
 
@@ -99,6 +100,7 @@
 /*=======mobile menu list====================*/
 .mobile-menu__nav{
 	flex: 1 1 auto;
+	
 }
 .mobile-menu__nav-list {
 	
@@ -126,7 +128,7 @@
 	height: 32px;
 	width: 25px;
 	background: #41F6D7;
-	border: 1px solid #000000;
+	
 	border-radius: 25%;
 	left: -46px;
 	top: -8px;
@@ -152,13 +154,36 @@
 	transform: scale(1.1);
 }
 
+
 .footer-mobile__mail {
 	font-size: 18px;
 	color: #1B1C21;
 	letter-spacing: -0.2px;
+	position: relative;
+}
+.footer-mobile__mail::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0;
+	max-width: 0;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	color: #41f6d8b3;
+	content: attr(data-hover);
+	transition: max-width 0.5s;
+	white-space: nowrap;
+}
+.footer-mobile__mail:hover::before,
+.footer-mobile__mail:focus::before{
+	max-width: 100%;
 }
 
+
+
 .footer-mobile__tel {
+	position: relative;
+	display: inline-block;
 	font-weight: 600;
 	font-size: 24px;
 	letter-spacing: -0.6px;
@@ -166,6 +191,24 @@
 	margin: 1rem 0 3rem 0;
 	align-self: flex-start;
 }
+.footer-mobile__tel::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0;
+	max-width: 0;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	color: #41f6d8b3;
+	content: attr(data-hover);
+	transition: max-width 0.5s;
+	white-space: nowrap;
+}
+.footer-mobile__tel:hover::before,
+.footer-mobile__tel:focus::before{
+	max-width: 100%;
+}
+
 
 .footer-mobile__languages {
 	display: flex;

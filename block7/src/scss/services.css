@@ -46,7 +46,7 @@ h1::before {
 	height: 45px;
 	width: 25px;
 	background: #41F6D7;
-	border: 1px solid #000000;
+	
 	border-radius: 25%;
 	left: -36px;
 }

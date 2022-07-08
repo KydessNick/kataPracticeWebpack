@@ -45,6 +45,13 @@ $sub-titile: #7E7E82;
 	src: url(../fonts/TTLakesCompressed-Bold.ttf) format("ttf");
 	src: url(../fonts/TTLakesCompressed-Bold.woff) format("woff");
 }
+@font-face {
+	font-family: 'TT Lakes Compressed Medium';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/TTLakesCompressed-Medium.ttf) format("ttf");
+	src: url(../fonts/TTLakesCompressed-Medium.woff) format("woff");
+}
 
 
 body {

@@ -72,12 +72,12 @@
 
 
 /*========      SWIPER   BRENDS  ===============*/
-.brends-swiper__list {
+.brends__swiper-list {
 	display: none;
 }
 
 @media (max-width: 767.97px) {
-	.brends-swiper__list {
+	.brends__swiper-list {
 		position: relative;
 		display: flex;
 		flex-direction: row;
@@ -157,6 +157,7 @@
 	height: 40px;
 	text-decoration: none;
 	text-align: center;
+	display: block;
 }
 
 .btn-swiper {
@@ -207,4 +208,11 @@
 	position: absolute;
 	top: 0;
 	left: -2rem;
+}
+
+/*  animation btn   */
+.brends-swiper__item .brends-swiper__button:hover{
+	transition:all 1.5s;
+	transform: rotate(360deg);
+	transform: scale(1);
 }
