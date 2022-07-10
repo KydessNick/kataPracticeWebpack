@@ -37,7 +37,7 @@
 	}
 }
 
-@media (min-width:766.99px) {
+@media (min-width:401px) {
 	.header__burger-button::after {
 		content: '';
 		position: absolute;
