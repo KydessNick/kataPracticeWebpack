@@ -39,6 +39,7 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
     watchOverFlow: true,
 })
     const servisecSwiper = new Swiper('.services__container', {
+                enabled: false,
                 slidesPerView:'auto',
                 spaceBetween: 16,
                 watchOverFlow: true,
