@@ -103,7 +103,7 @@ display: inherit;
 	display: inherit;
 	}
 
-.read-btns__text-anim::after{
+.btns-text-anim::after{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -116,8 +116,8 @@ display: inherit;
 	transition: max-width 0.5s;
 	white-space: nowrap;
 	}
-	.read-btns__text-anim:hover::after,
-	.read-btns__text-anim:focus::after{
+	.btns-text-anim:hover::after,
+	.btns-text-anim:focus::after{
 		max-width: 100%;
 	}
 
