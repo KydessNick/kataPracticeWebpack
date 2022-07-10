@@ -38,6 +38,7 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
     spaceBetween: 16,
     watchOverFlow: true,
 })
+/*
     const servisecSwiper = new Swiper('.services__container', {
                 enabled: false,
                 slidesPerView:'auto',
@@ -49,6 +50,7 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
                     }
                 },
             })
+*/
             const brendsSwiper = new Swiper('.brends__swiper-list', {
                 pagination: {
                     el: '.swiper-pagination',
