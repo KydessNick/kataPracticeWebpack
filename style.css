@@ -1499,11 +1499,24 @@ h1::before {
 	flex-wrap: nowrap;
 	margin-bottom: 15px;
 	align-items: center;
+	flex-wrap: wrap;
 }
-
+/* for swiper
 @media (min-width:1119.97px) {
 	.services__list {
 		flex-wrap: wrap;
+	}
+}
+*/
+@media (max-width:1439.98px) {
+	.services__list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		margin-bottom: 15px;
+		align-items: center;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
 	}
 }
 
@@ -1514,6 +1527,7 @@ h1::before {
 	max-width: 248px;
 	height: 40px;
 	align-items: center;
+	scroll-snap-align: start;
 }
 
 @media (min-width:1119.97px) {
