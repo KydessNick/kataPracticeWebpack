@@ -159,7 +159,7 @@ h1::before {
 	background-color: #ffffff;
 	border: 1px solid #B8FFEC;
 	border-radius: 5px;
-	
+	position: relative;
 }
 
 @media (min-width:1119.97px) {
@@ -171,4 +171,5 @@ h1::before {
 .services__text {
 	white-space: pre;
 	font-size: 16px;
+	position:relative ;
 }
