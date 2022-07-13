@@ -32,6 +32,13 @@
 	justify-self: center;
 }
 .footer__privacy-policy {
+	
+	font-size: 16px;
+    color: #7E7E82;
+	position: relative;
+}
+.footer__privacy-policy.btns-text-anim::after{
+	top:4px
 }
 .footer__right-side {
 	flex: 1 1 33%;

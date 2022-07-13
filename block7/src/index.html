@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./scss/style.scss" />
     <title>Document</title>
 </head>
 
@@ -35,7 +35,7 @@
             </button>
         </div>
 
-        <!-- <span class="divide-line--second"></span>-->
+       
         
         <button type="button" class=" header__button header__repair-icon">
             <img src="./img/repairIcon.svg" alt="Repair icon" class="header__icon-repair icon">
@@ -54,7 +54,6 @@
                     <button class="mobile-menu__close-button close-button">
                         <svg class="mobile-menu__close-icon" aria-hidden="true" focusable="false" width="32px"
                             height="32px" viewBox="0 0 32 32"></svg>
-                        <span class="close-button__text">close button</span>
                     </button>
                     <a href="#" class="mobile-menu__logo-link">
                         <img src="img/GroupLogo.svg" alt="CPS logo" class="mobile-menu__logo">
@@ -70,7 +69,7 @@
                     <a href="#" class="mobile-menu__nav-link ">Ремонт техники</a>
                 </li>
                 <li class="mobile-menu__nav-item mobile-menu__nav-item--active">
-                    <a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--active">Услги и сервисы</a>
+                    <a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--active">Услуги и сервисы</a>
                 </li>
                 <li class="mobile-menu__nav-item">
                     <a href="#" class="mobile-menu__nav-link">Корпоративным клиентам</a>
@@ -154,6 +153,7 @@
 
         <!-- Main -->
         <main class="main">
+
             <section class="services">
                 <div class="services__tittle-container ">
                     <h1 class="services__tittle title">Услуги и сервисы</h1>
@@ -193,7 +193,7 @@
                     </ul>
                 </nav>
             </section>
-            <section class="comment">
+            <div class="comment">
                 <div class="comment__container">
                     <p class="comment__promo-text">
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -218,156 +218,102 @@
                 <div class="comment__pic-container">
                     <img src="./img/MG_3223.jpg" alt="Picture CPS" class="picture-CPS">
                 </div>
-            </section>
+            </div>
             <!-- Swiper + brends-->
             <div class="brends brends-container">
                 <h2 class="brends__title gradient-title">Ремонт техники различных брендов</h2>
-
-                <!-- Swiper  -->
-                <div class="brends__swiper-list brends-swiper swiper-container">
-                    <div class="brends-swiper__swiper-wripper swiper-wrapper">
+                <div class="brends__swiper-container swiper-container">
+                    <div class="brends__swiper-list swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/lenovo.png" alt="icon lenovo"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/lenovo.png" alt="icon lenovo" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/ViewSonic.png" alt="icon ViewSonic"
-                                    class="brends-swiper__icon">
-                                    
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/samsung.png" alt="icon samsung" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/samsung.png" alt="icon samsung"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/apple.png" alt="icon apple" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/apple.png" alt="icon apple"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/ViewSonic.png" alt="icon ViewSonic" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/ViewSonic.png" alt="icon ViewSonic"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/bosch.png" alt="icon bosch" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/bosch.png" alt="icon bosch"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/hp.png" alt="icon hp" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/hp.png" alt="icon hp" class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/acer.png" alt="icon acer" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item ">
-                                <img src="img/acer.png" alt="icon acer" class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/sony.png" alt="icon sony" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/sony.png" alt="icon sony" class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/lenovo.png" alt="icon lenovo" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/lenovo.png" alt="icon lenovo"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/samsung.png" alt="icon samsung" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/samsung.png" alt="icon samsung"
-                                    class="brends-swiper__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/apple.png" alt="icon apple" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="brends-swiper__item">
-                                <img src="img/apple.png" alt="icon apple" class="brends__icon">
-                                <button class="brends-swiper__button"></button>
+                            <div class="brends__swiper-item">
+                                <img src="./img/ViewSonic.png" alt="icon ViewSonic" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
                             </div>
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="brends__swiper-item">
+                                <img src="./img/bosch.png" alt="icon bosch" class="brends__swiper-icon">
+                                <button class="brends__swiper-button"></button>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <div class="brends__buttons-container">
+                        <button type="button" data-hover="Показать еще" class="brends__btn-more btns-text-anim">Показать еще</button>
+                        <button type="button" data-hover="Скрыть" class="brends__btn-less btns-text-anim">Скрыть</button>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- Brends  -->
-                <div class="brends__list">
-                    <div class="brends__item">
-                        <img src="img/lenovo.png" alt="icon lenovo" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/ViewSonic.png" alt="icon ViewSonic" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/samsung.png" alt="icon samsung" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/apple.png" alt="icon apple" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/ViewSonic.png" alt="icon ViewSonic" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/bosch.png" alt="icon bosch" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/hp.png" alt="icon hp" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item ">
-                        <img src="img/acer.png" alt="icon acer" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/sony.png" alt="icon sony" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/lenovo.png" alt="icon lenovo" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/samsung.png" alt="icon samsung" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                    <div class="brends__item">
-                        <img src="img/apple.png" alt="icon apple" class="brends__icon">
-                        <button class="brends__button-item"></button>
-                    </div>
-                </div>
-                <div class="brends__buttons-container">
-                    <button type="button" data-hover="Показать еще" class="brends__button-more btns-text-anim">Показать еще</button>
-                    <button type="button" data-hover="Скрыть" class="brends__button-less btns-text-anim">Скрыть</button>
-                </div>
+               
             </div>
+
+            
             <section class="repair">
                 <h2 class="repair__title gradient-title">Ремонт различных видов техники</h2>
                 <div class="repair__container swiper-container">
@@ -445,7 +391,7 @@
                         <div class="prices__info">
                             <div class="prices__price">Цена</div>
                             <div class="prices__working-time">Срок</div>
-                            <div type="button" disabled class=" prices__btn-order-discription"></div>
+                            <button type="button" disabled class=" prices__btn-order-discription"></button>
                         </div>
 
                     </div>
@@ -627,26 +573,27 @@
                     <p class="prices-post-info__promo-agreement">Все цены указаны с учетом НДС. Стоимость ремонта указана на
                         единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте
                         заявку.</p>
-                    <button type="button" data-hover="Получить коммерческое предложение"  class="prices-post-info__btn-get-offer ">Получить коммерческое предложение</button>
+                    <button type="button" data-hover="Получить коммерческое предложение"  class="prices-post-info__btn-get-offer btns-text-anim">Получить коммерческое предложение</button>
                 </div>
             </section>
         </main>
 
+
+    </div>
+        <!-- Footer   -->
         <footer class="footer">
             <div class="footer__left-side">
                 <p class="footer__year">© 2019 CPS</p>
                 <p class="footer__authors">Разработано командой Apesong</p>
             </div>
             <div class="footer__center-side">
-                <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+                <a href="#" class="footer__privacy-policy btns-text-anim" data-hover="Политика конфиденциальности" >Политика конфиденциальности</a>
             </div>
             <div class="footer__right-side">
                 <p class="footer__notification">Информация, размещенная на данной странице, не является публичной
                     офертой</p>
             </div>
         </footer>
-
-    </div>
     <!-- Blur -->
     <div class="blur"></div>
     <!--

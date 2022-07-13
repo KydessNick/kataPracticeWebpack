@@ -23,7 +23,10 @@
 @media (min-width:1439.98px) {
 	.mobile-menu {
 		display: flex;
-		position: fixed;
+		position: static;
+		transform: translateX(0px) !important;
+		top:0;
+		left:0;
 		min-width: 305px;
 		height: 100vh;
 		background-color: #fff;

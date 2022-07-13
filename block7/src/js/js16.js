@@ -34,10 +34,11 @@ export let text1120More            = document.querySelector('.text-1120px-more')
 
 // brends list
 export const windowWidth           = document.documentElement.clientWidth;
-export let brendParent             = document.querySelector('.brends__list');
-export let brendChildren           = brendParent.querySelectorAll('.brends__item');
-export let btnShowMoreBrends       = document.querySelector('.brends__button-more');
-export let btnShowLessBrends       = document.querySelector('.brends__button-less');
+export let brendParent = document.querySelector('.brends__swiper-list');
+//cosole.log(brendParent)
+export let brendChildren = brendParent.querySelectorAll('.brends__swiper-item');
+export let btnShowMoreBrends       = document.querySelector('.brends__btn-more');
+export let btnShowLessBrends       = document.querySelector('.brends__btn-less');
 
 // repair list
 export let btnShowMoreRepair       = document.querySelector('.repair__btn-more');
@@ -172,6 +173,7 @@ function brendsELementCheck(){
         for(let i = 0; i < 6; i++){
             brendChildren[i].style.display = 'flex';
             console.log(brendChildren[i].style)
+            console.log('aboba')
         } 
 
     }else if(windowWidth > 1074 && windowWidth < 1330 ){
@@ -297,7 +299,9 @@ var ro = new ResizeObserver(entries => {
   });
   
   // Наблюдаем один или несколько элементов
-  ro.observe(brendParent);
+  let main = document.querySelector('main')
+  let mainCheck= ro.observe(main);
+
 
 console.log(brendChildren[1])
 console.log()

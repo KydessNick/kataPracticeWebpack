@@ -17,6 +17,11 @@
 		padding: 0px 25px 0 25px;
 	}
 }
+@media (min-width:1439.98px) {
+	.header {
+	display:none;
+	}
+}
 @media (max-width:401px) {
 	.header {
 		height: 88px;
@@ -47,7 +52,7 @@
 		right: -20px;
 	}
 }
-@media (min-width:1119.99px) {
+@media (min-width:1439.98px) {
 	.header__burger-button::after {
 		display: none;
 
@@ -105,7 +110,7 @@
 		right: -20px;
 	}
 }
-@media (min-width:1119.98px) {
+@media (min-width:1439.98px) {
 	.header__screen-768-container{
 		/*
 		position: absolute;
@@ -134,7 +139,7 @@ display: none;
 .header_repair-icon{
 
 }
-@media (min-width:1119.98px) {
+@media (min-width:1439.98px) {
 	.header__icon-repair {
 		display: none;
 	}
@@ -156,7 +161,7 @@ display: none;
 }
 
 .header__check-status-icon {}
-@media (min-width:1119.98px) {
+@media (min-width:1439.98px) {
 	.header__check-status-icon {
 		display: none;
 	}
@@ -177,7 +182,7 @@ display: none;
 	}
 }
 
-@media (min-width:1119.98px) {
+@media (min-width:1439.98px) {
 	.header__button:not(:last-child) {
 		margin-right: 20px;
 	}

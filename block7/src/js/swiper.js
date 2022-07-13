@@ -14,7 +14,7 @@ const repairSwiper = new Swiper('.repair__container', {
     },
     breakpoints:{
         768:{
-            enabled: false
+            enabled: false,
         }
     },
     slidesPerView: 'auto' ,
@@ -51,7 +51,8 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
                 },
             })
 */
-            const brendsSwiper = new Swiper('.brends__swiper-list', {
+            const brendsSwiper = new Swiper('.brends__swiper-container', {
+                enabled: true,
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
@@ -60,6 +61,11 @@ const pricesSwiper = new Swiper('.prices-swiper__list', {
                 slidesPerView: 'auto' ,
                 spaceBetween: 16,
                 watchOverFlow: true,
+                breakpoints:{
+                    768:{
+                        enabled: false
+                    }
+                },
             })
 
 

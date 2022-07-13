@@ -156,7 +156,10 @@ input {
 
 @media (min-width:1439.98px) {
 	.wrapper {
-		margin-left: 320px;
+		/*margin-left: 320px;*/
+		
+		display: flex;
+		flex-direction: row;
 	}
 }
 
@@ -164,7 +167,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	background-color: #F8F8F8;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
+	max-width: 100wv;
 }
 
 
@@ -183,5 +187,5 @@ main {
 
 /* Swiper */
 .swiper-wrapper  .swiper-slide{
-	width: auto;
+	width: inherit;
 }
