@@ -40,6 +40,11 @@
 .footer__privacy-policy.btns-text-anim::after{
 	top:4px
 }
+@media (max-width:289px ) {
+.footer__privacy-policy.btns-text-anim::after{
+	top:4.3px
+}
+}
 .footer__right-side {
 	flex: 1 1 33%;
 	justify-self: flex-end;

@@ -61,9 +61,11 @@
 	align-items: center;
 }
 .mobile-menu__left-section-header button:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 .mobile-menu__search:hover{
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -154,6 +156,7 @@
 	margin-bottom: 1rem;
 }
 .footer-mobile__icons-container button:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -222,6 +225,7 @@
 	color: #1B1C21;
 }
 .footer-mobile__languages a:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -239,5 +243,6 @@
 }
 .mobile-menu__nav-list li a:hover{
 	transform-origin:0  0 ;
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }

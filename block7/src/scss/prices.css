@@ -107,6 +107,7 @@
         transition: all 0.4s;
     }   
     .prices__btn-order:hover{
+        
         background-color: #2fa994;
     }
     .prices__btn-order:hover::before,

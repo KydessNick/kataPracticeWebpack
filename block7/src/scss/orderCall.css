@@ -26,6 +26,10 @@
 	margin: 1rem;
 	
 }
+.order-call__close-btn:hover {
+	transition: all 0.3s ease;
+	transform: scale(1.1);
+}
 @media (min-width:1439.98px) {
 	.order-call__close-btn {
 		position: absolute;
@@ -54,4 +58,11 @@
 .form-call__custom-link {}
 
 .link-agreement {}
+
+.form-call__submit{
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+.form-call__submit:hover{
+	background-color: #2fa994;
+}
 

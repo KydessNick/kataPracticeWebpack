@@ -148,6 +148,7 @@
     width: 40px;
 }
 .brends__swiper-button:hover {
+	transition: all 0.3s ease;
     transform: scale(1.1);
 }
 

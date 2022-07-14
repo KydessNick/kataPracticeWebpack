@@ -27,6 +27,11 @@
 .feedback-form__close-btn{
 	margin: 1rem;
 }
+.feedback-form__close-btn:hover{
+	transition: all 0.3s ease;
+	transform: scale(1.1);
+	margin: 1rem;
+}
 @media (min-width:1439.98px) {
 	.feedback-form__close-btn {
 		position: absolute;
@@ -71,9 +76,11 @@ input,
 
 .feedback-form__text {}
 
-.feedback-form__submit {}
+.feedback-form__submit {
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
 
-.feedback-form__submit::after {
-	background-image: url('../img/dropdown.svg');
+.feedback-form__submit:hover {
+	background-color: #2fa994;
 }
 
