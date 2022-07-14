@@ -147,6 +147,7 @@
     width: 40px;
 }
 .brends__swiper-button:hover {
+	transition: all 0.3s ease;
     transform: scale(1.1);
 }
 
@@ -629,6 +630,11 @@ main {
 .footer__privacy-policy.btns-text-anim::after{
 	top:4px
 }
+@media (max-width:289px ) {
+.footer__privacy-policy.btns-text-anim::after{
+	top:4.3px
+}
+}
 .footer__right-side {
 	flex: 1 1 33%;
 	justify-self: flex-end;
@@ -664,6 +670,11 @@ main {
 
 
 .feedback-form__close-btn{
+	margin: 1rem;
+}
+.feedback-form__close-btn:hover{
+	transition: all 0.3s ease;
+	transform: scale(1.1);
 	margin: 1rem;
 }
 @media (min-width:1439.98px) {
@@ -710,10 +721,12 @@ input,
 
 .feedback-form__text {}
 
-.feedback-form__submit {}
+.feedback-form__submit {
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
 
-.feedback-form__submit::after {
-	background-image: url(./static/dropdown.svg);
+.feedback-form__submit:hover {
+	background-color: #2fa994;
 }
 
 
@@ -779,9 +792,11 @@ input,
 	align-items: center;
 }
 .mobile-menu__left-section-header button:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 .mobile-menu__search:hover{
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -872,6 +887,7 @@ input,
 	margin-bottom: 1rem;
 }
 .footer-mobile__icons-container button:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -940,6 +956,7 @@ input,
 	color: #1B1C21;
 }
 .footer-mobile__languages a:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -957,6 +974,7 @@ input,
 }
 .mobile-menu__nav-list li a:hover{
 	transform-origin:0  0 ;
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 
@@ -1068,6 +1086,7 @@ input,
         transition: all 0.4s;
     }   
     .prices__btn-order:hover{
+        
         background-color: #2fa994;
     }
     .prices__btn-order:hover::before,
@@ -1381,6 +1400,7 @@ input,
 	align-self: flex-end;
 }
 .repair__button-item:hover {
+	transition: all 0.3s ease;
     transform: scale(1.1);
 }
 
@@ -1639,6 +1659,10 @@ h1::before {
 	margin: 1rem;
 	
 }
+.order-call__close-btn:hover {
+	transition: all 0.3s ease;
+	transform: scale(1.1);
+}
 @media (min-width:1439.98px) {
 	.order-call__close-btn {
 		position: absolute;
@@ -1667,6 +1691,13 @@ h1::before {
 .form-call__custom-link {}
 
 .link-agreement {}
+
+.form-call__submit{
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+.form-call__submit:hover{
+	background-color: #2fa994;
+}
 
 
 $bgColor: #fff;
@@ -1724,6 +1755,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	border-bottom: 1px solid #D9FFF5;
 }
 
 @media (max-width:1439.97px) {
@@ -1939,9 +1971,11 @@ display: none;
 
 /* hover */
 .header button:hover {
+	transition: all 0.3s ease;
 	transform: scale(1.1);
 }
 .header .header__burger-button:hover{
+	transition: all 0.3s ease;
 	transform: scale(1);
 }
 .icon-of-burger{
